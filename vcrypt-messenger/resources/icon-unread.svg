@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="100 200 550 500"
+   height="595.27559pt"
+   id="svg1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="icon-unread.svg"
+   sodipodi:version="0.32"
+   width="595.27559pt"
+   version="1.1">
+  <metadata
+     id="metadata3">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title>Heart Left-Highlight</dc:title>
+        <dc:description>This is a normal valentines day heart.</dc:description>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>holiday</rdf:li>
+            <rdf:li>valentines</rdf:li>
+            <rdf:li />
+            <rdf:li>valentine</rdf:li>
+            <rdf:li>hash(0x8a091c0)</rdf:li>
+            <rdf:li>hash(0x8a0916c)</rdf:li>
+            <rdf:li>signs_and_symbols</rdf:li>
+            <rdf:li>hash(0x8a091f0)</rdf:li>
+            <rdf:li>day</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://www.openclipart.org">
+            <dc:title>Jon Phillips</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Jon Phillips</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Jon Phillips</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:date />
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://web.resource.org/cc/PublicDomain" />
+        <dc:language>en</dc:language>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://web.resource.org/cc/PublicDomain">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs3" />
+  <sodipodi:namedview
+     bordercolor="#666666"
+     borderopacity="1.0"
+     id="base"
+     inkscape:current-layer="layer1"
+     inkscape:cx="549.40674"
+     inkscape:cy="596.00159"
+     inkscape:document-units="px"
+     inkscape:guide-bbox="true"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:window-height="1056"
+     inkscape:window-width="1863"
+     inkscape:window-x="57"
+     inkscape:window-y="24"
+     inkscape:zoom="0.35"
+     pagecolor="#ffffff"
+     showguides="true"
+     showgrid="false"
+     inkscape:window-maximized="1" />
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <path
+       d="M 263.41570,235.14588 C 197.17570,235.14588 143.41575,288.90587 143.41575,355.14588 C 143.41575,489.90139 279.34890,525.23318 371.97820,658.45392 C 459.55244,526.05056 600.54070,485.59932 600.54070,355.14588 C 600.54070,288.90588 546.78080,235.14587 480.54070,235.14588 C 432.49280,235.14588 391.13910,263.51631 371.97820,304.33338 C 352.81740,263.51630 311.46370,235.14587 263.41570,235.14588 z "
+       id="path7"
+       sodipodi:nodetypes="ccccccc"
+       style="fill:#e60000;fill-opacity:1.0000000;stroke:#000000;stroke-width:18.700001;stroke-miterlimit:4.0000000;stroke-opacity:1.0000000" />
+    <path
+       d="M 265.00000,253.59375 C 207.04033,253.59375 160.00000,300.63407 160.00000,358.59375 C 160.00000,476.50415 278.91857,507.43251 359.96875,624.00000 C 366.52868,614.08205 220.00000,478.47309 220.00000,378.59375 C 220.00000,320.63407 267.04033,273.59375 325.00000,273.59375 C 325.50453,273.59375 325.99718,273.64912 326.50000,273.65625 C 309.22436,261.07286 288.00557,253.59374 265.00000,253.59375 z "
+       id="path220"
+       sodipodi:nodetypes="ccccccc"
+       style="fill:#e6e6e6;fill-opacity:0.64556962;stroke:none;stroke-width:18.700001;stroke-miterlimit:4.0000000;stroke-opacity:1.0000000" />
+    <path
+       style="fill:#0000ff"
+       d="m 358.72657,618.44552 c -4.04714,-5.30606 -6.667,-10.3388 -5.82193,-11.18386 2.70961,-2.70962 -3.22598,-10.94617 -48.81635,-67.7402 C 187.59934,394.40578 149.27017,308.36052 169.64274,237.70421 185.85452,181.47837 230.55557,144.79405 295.27821,134.60032 l 14.15718,-2.22973 -17.01432,-9.04115 c -57.36768,-30.484313 -122.88293,-21.40957 -168.4665,23.33488 -37.051151,36.3691 -50.593545,82.24067 -40.487879,137.14286 11.185705,60.76984 36.814999,97.56886 119.082909,170.98143 46.54028,41.53068 114.28571,107.66037 114.28571,111.55994 0,1.54769 -12.53571,-9.38703 -27.85714,-24.2994 -15.32143,-14.91234 -51,-47.72517 -79.28572,-72.91743 -28.28571,-25.19223 -58.2195,-53.23743 -66.51954,-62.32266 -47.652244,-52.1602 -69.240937,-102.43098 -69.16083,-161.04581 0.05827,-42.63944 14.258247,-78.13394 42.59466,-106.47036 27.89331,-27.89331 63.88585,-42.534605 104.71,-42.594658 56.28097,-0.08279 103.6048,29.227528 132.66143,82.164698 7.07143,12.88316 13.5,23.43072 14.28571,23.439 0.78572,0.008 6.57143,-9.88405 12.85715,-21.98297 13.15882,-25.32849 38.73462,-53.00691 59.63097,-64.53331 59.71888,-32.940889 131.82563,-23.13059 178.84948,24.3329 56.75309,57.28371 57.73926,144.43368 2.55392,225.69767 -16.59823,24.44196 -41.9588,50.43833 -106.74866,109.42482 -63.60931,57.91168 -113.42306,108.55788 -132.85714,135.07737 -7.07143,9.64957 -13.66883,17.5964 -14.66089,17.6596 -0.99206,0.0631 -5.11503,-4.22643 -9.16214,-9.53249 l 0,0 z"
+       id="path2985"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.73915344,0,0,0.73915344,100,175)" />
+  </g>
+</svg>

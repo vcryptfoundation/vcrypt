@@ -1,0 +1,5 @@
+#LINKFLAGS :=  -fprofile-arcs 
+#OTHERFLAGS := -fprofile-arcs -ftest-coverage
+
+OTHERFLAGS := 
+LINKFLAGS := 

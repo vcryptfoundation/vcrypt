@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/icon-online.svg</file>
+        <file>resources/icon-offline.svg</file>
+        <file>resources/CallBusy.wav</file>
+        <file>resources/CallConnecting.wav</file>
+        <file>resources/CallFailed.wav</file>
+        <file>resources/CallHangup.wav</file>
+        <file>resources/CallHold.wav</file>
+        <file>resources/CallRemoteHangup.wav</file>
+        <file>resources/CallResume.wav</file>
+        <file>resources/CallRingingIn.wav</file>
+        <file>resources/CallRingingOut.wav</file>
+        <file>resources/ChatIncoming.wav</file>
+        <file>resources/ChatIncomingInitial.wav</file>
+        <file>resources/ChatOutgoing.wav</file>
+        <file>resources/ContactAdded.wav</file>
+        <file>resources/ContactAuthRequest.wav</file>
+        <file>resources/ContactOffline.wav</file>
+        <file>resources/ContactOnline.wav</file>
+        <file>resources/SkypeLogin.wav</file>
+        <file>resources/SkypeLogout.wav</file>
+        <file>resources/TransferComplete.wav</file>
+        <file>resources/TransferFailed.wav</file>
+        <file>resources/TransferRequest.wav</file>
+        <file>resources/VoicemailReceived.wav</file>
+        <file>resources/icon-unread.svg</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,9 @@
+#!/bin/bash
+
+cd ../polarssl-1.2.8/ && make lib && cd -
+cd Debug && make -j8 all && cd ..
+
+gcc -g3 -Wall -fdata-sections -ffunction-sections -Wl,-gc-sections \
+-I. -I../opus-1.0.2/installed/include/ -I../polarssl-1.2.8/include/ -I../server/  \
+test.c ./Debug/libvcrypt_libclient.a ../polarssl-1.2.8/library/libpolarssl.a ../opus-1.0.2/installed/lib/libopus.a \
+-lm -lpthread -o test  

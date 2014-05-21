@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VcryptMain</class>
+ <widget class="QMainWindow" name="VcryptMain">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>552</width>
+    <height>625</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Vcrypt Messenger</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>552</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuVcrypt">
+    <property name="title">
+     <string>Vcrypt</string>
+    </property>
+    <addaction name="actionAdd_buddy"/>
+    <addaction name="actionSettings"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuVcrypt"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionSettings">
+   <property name="text">
+    <string>Settings</string>
+   </property>
+  </action>
+  <action name="actionAdd_buddy">
+   <property name="text">
+    <string>Add buddy</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
