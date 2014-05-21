@@ -25,7 +25,7 @@ endif
 all: vcrypt_client_cmdline
 
 dependents:
-	-cd ../../vcrypt_libclient/Debug && $(MAKE) clean all
+	-cd ../../vcrypt_libclient/Debug && $(MAKE) all
 
 # Tool invocations
 vcrypt_client_cmdline: $(OBJS) $(USER_OBJS) ../../vcrypt_libclient/Debug/libvcrypt_libclient.a

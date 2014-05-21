@@ -481,7 +481,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 -#endif /* camellia.h */
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/include/polarssl/cipher.h polarssl-1.2.8/include/polarssl/cipher.h
 --- polarssl-1.2.8-downloaded/include/polarssl/cipher.h	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/include/polarssl/cipher.h	2014-05-21 08:16:40.066815514 +0300
++++ polarssl-1.2.8/include/polarssl/cipher.h	2014-05-21 10:19:06.518701693 +0300
 @@ -58,31 +58,7 @@
  
  typedef enum {
@@ -516,7 +516,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  typedef enum {
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/include/polarssl/config.h polarssl-1.2.8/include/polarssl/config.h
 --- polarssl-1.2.8-downloaded/include/polarssl/config.h	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/include/polarssl/config.h	2014-05-21 08:16:40.066815514 +0300
++++ polarssl-1.2.8/include/polarssl/config.h	2014-05-21 10:19:06.518701693 +0300
 @@ -148,14 +148,14 @@
   *
   * Enable Cipher Feedback mode (CFB) for symmetric ciphers.
@@ -1379,7 +1379,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 -#endif /* ssl_cache.h */
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/include/polarssl/ssl.h polarssl-1.2.8/include/polarssl/ssl.h
 --- polarssl-1.2.8-downloaded/include/polarssl/ssl.h	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/include/polarssl/ssl.h	2014-05-21 08:16:40.070815514 +0300
++++ polarssl-1.2.8/include/polarssl/ssl.h	2014-05-21 10:19:06.518701693 +0300
 @@ -91,14 +91,12 @@
  #define POLARSSL_ERR_SSL_HW_ACCEL_FALLTHROUGH              -0x6F80  /**< Hardware acceleration function skipped / left alone data */
  #define POLARSSL_ERR_SSL_COMPRESSION_FAILED                -0x6F00  /**< Processing of the compression / decompression failed */
@@ -1448,7 +1448,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
   *
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/include/polarssl/x509.h polarssl-1.2.8/include/polarssl/x509.h
 --- polarssl-1.2.8-downloaded/include/polarssl/x509.h	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/include/polarssl/x509.h	2014-05-21 08:16:40.070815514 +0300
++++ polarssl-1.2.8/include/polarssl/x509.h	2014-05-21 10:19:06.522701692 +0300
 @@ -771,6 +771,18 @@
   */
  int x509_self_test( int verbose );
@@ -1603,7 +1603,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 -#endif /* xtea.h */
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/aes.c polarssl-1.2.8/library/aes.c
 --- polarssl-1.2.8-downloaded/library/aes.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/aes.c	2014-05-21 08:16:40.074815514 +0300
++++ polarssl-1.2.8/library/aes.c	2014-05-21 10:19:06.522701692 +0300
 @@ -34,9 +34,6 @@
  #if defined(POLARSSL_AES_C)
  
@@ -2229,7 +2229,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 -#endif
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/asn1write.c polarssl-1.2.8/library/asn1write.c
 --- polarssl-1.2.8-downloaded/library/asn1write.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/asn1write.c	2014-05-21 08:16:40.074815514 +0300
++++ polarssl-1.2.8/library/asn1write.c	2014-05-21 10:19:06.522701692 +0300
 @@ -90,7 +90,7 @@
      // DER format assumes 2s complement for numbers, so the leftmost bit
      // should be 0 for positive numbers and 1 for negative numbers.
@@ -2250,7 +2250,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
              return( POLARSSL_ERR_ASN1_BUF_TOO_SMALL );
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/base64.c polarssl-1.2.8/library/base64.c
 --- polarssl-1.2.8-downloaded/library/base64.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/base64.c	2014-05-21 08:16:40.074815514 +0300
++++ polarssl-1.2.8/library/base64.c	2014-05-21 10:19:06.522701692 +0300
 @@ -191,72 +191,4 @@
      return( 0 );
  }
@@ -2326,7 +2326,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  #endif
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/bignum.c polarssl-1.2.8/library/bignum.c
 --- polarssl-1.2.8-downloaded/library/bignum.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/bignum.c	2014-05-21 08:16:40.074815514 +0300
++++ polarssl-1.2.8/library/bignum.c	2014-05-21 10:19:06.522701692 +0300
 @@ -544,8 +544,10 @@
  
      memset( buf, 0, buflen );
@@ -4394,7 +4394,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 -#endif
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/cipher.c polarssl-1.2.8/library/cipher.c
 --- polarssl-1.2.8-downloaded/library/cipher.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/cipher.c	2014-05-21 08:16:40.074815514 +0300
++++ polarssl-1.2.8/library/cipher.c	2014-05-21 10:19:06.522701692 +0300
 @@ -27,6 +27,7 @@
   *  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
   */
@@ -4711,7 +4711,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  #endif
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/cipher_wrap.c polarssl-1.2.8/library/cipher_wrap.c
 --- polarssl-1.2.8-downloaded/library/cipher_wrap.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/cipher_wrap.c	2014-05-21 08:16:40.074815514 +0300
++++ polarssl-1.2.8/library/cipher_wrap.c	2014-05-21 10:19:06.522701692 +0300
 @@ -37,18 +37,6 @@
  #include "polarssl/aes.h"
  #endif
@@ -5314,7 +5314,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  #endif
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/ctr_drbg.c polarssl-1.2.8/library/ctr_drbg.c
 --- polarssl-1.2.8-downloaded/library/ctr_drbg.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/ctr_drbg.c	2014-05-21 08:16:40.082815514 +0300
++++ polarssl-1.2.8/library/ctr_drbg.c	2014-05-21 10:19:06.522701692 +0300
 @@ -398,165 +398,4 @@
  }
  #endif /* POLARSSL_FS_IO */
@@ -6484,7 +6484,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 -#endif
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/dhm.c polarssl-1.2.8/library/dhm.c
 --- polarssl-1.2.8-downloaded/library/dhm.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/dhm.c	2014-05-21 08:16:40.074815514 +0300
++++ polarssl-1.2.8/library/dhm.c	2014-05-21 10:19:06.522701692 +0300
 @@ -287,16 +287,4 @@
      mpi_free( &ctx->P );
  }
@@ -6504,7 +6504,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  #endif
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/entropy_poll.c polarssl-1.2.8/library/entropy_poll.c
 --- polarssl-1.2.8-downloaded/library/entropy_poll.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/entropy_poll.c	2014-05-21 08:16:40.078815514 +0300
++++ polarssl-1.2.8/library/entropy_poll.c	2014-05-21 10:19:06.522701692 +0300
 @@ -33,9 +33,6 @@
  #if defined(POLARSSL_TIMING_C)
  #include "polarssl/timing.h"
@@ -6540,7 +6540,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  #endif /* POLARSSL_ENTROPY_C */
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/error.c polarssl-1.2.8/library/error.c
 --- polarssl-1.2.8-downloaded/library/error.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/error.c	2014-05-21 08:16:40.078815514 +0300
++++ polarssl-1.2.8/library/error.c	2014-05-21 10:19:06.522701692 +0300
 @@ -41,14 +41,6 @@
  #include "polarssl/bignum.h"
  #endif
@@ -6711,7 +6711,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  #endif /* POLARSSL_ERROR_C */
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/gcm.c polarssl-1.2.8/library/gcm.c
 --- polarssl-1.2.8-downloaded/library/gcm.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/gcm.c	2014-05-21 08:16:40.078815514 +0300
++++ polarssl-1.2.8/library/gcm.c	2014-05-21 10:19:06.522701692 +0300
 @@ -321,301 +321,4 @@
      return( POLARSSL_ERR_GCM_AUTH_FAILED );
  }
@@ -7251,7 +7251,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 -#endif
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/Makefile polarssl-1.2.8/library/Makefile
 --- polarssl-1.2.8-downloaded/library/Makefile	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/Makefile	2014-05-21 09:10:36.850765365 +0300
++++ polarssl-1.2.8/library/Makefile	2014-05-21 10:19:06.522701692 +0300
 @@ -4,13 +4,17 @@
  # To compile on MinGW: add "-lws2_32" to LDFLAGS or define WINDOWS in your
  # environment
@@ -8193,7 +8193,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 -#endif
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/md5.c polarssl-1.2.8/library/md5.c
 --- polarssl-1.2.8-downloaded/library/md5.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/md5.c	2014-05-21 08:16:40.078815514 +0300
++++ polarssl-1.2.8/library/md5.c	2014-05-21 10:19:06.522701692 +0300
 @@ -407,179 +407,4 @@
      memset( &ctx, 0, sizeof( md5_context ) );
  }
@@ -8376,7 +8376,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  #endif
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/md_wrap.c polarssl-1.2.8/library/md_wrap.c
 --- polarssl-1.2.8-downloaded/library/md_wrap.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/md_wrap.c	2014-05-21 08:16:40.078815514 +0300
++++ polarssl-1.2.8/library/md_wrap.c	2014-05-21 10:19:06.522701692 +0300
 @@ -33,14 +33,6 @@
  
  #include "polarssl/md_wrap.h"
@@ -8556,7 +8556,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/net.c polarssl-1.2.8/library/net.c
 --- polarssl-1.2.8-downloaded/library/net.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/net.c	2014-05-21 08:16:40.078815514 +0300
++++ polarssl-1.2.8/library/net.c	2014-05-21 10:19:06.522701692 +0300
 @@ -51,13 +51,14 @@
  #include <sys/types.h>
  #include <sys/socket.h>
@@ -8817,7 +8817,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 -#endif /* POLARSSL_PBKDF2_C */
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/pem.c polarssl-1.2.8/library/pem.c
 --- polarssl-1.2.8-downloaded/library/pem.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/pem.c	2014-05-21 08:16:40.078815514 +0300
++++ polarssl-1.2.8/library/pem.c	2014-05-21 10:19:06.522701692 +0300
 @@ -36,9 +36,9 @@
  
  #include <stdlib.h>
@@ -9549,7 +9549,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 -#endif /* defined(POLARSSL_PKCS11_C) */
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/pkcs12.c polarssl-1.2.8/library/pkcs12.c
 --- polarssl-1.2.8-downloaded/library/pkcs12.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/pkcs12.c	2014-05-21 08:16:40.078815514 +0300
++++ polarssl-1.2.8/library/pkcs12.c	2014-05-21 10:19:06.522701692 +0300
 @@ -37,100 +37,12 @@
  #include "polarssl/asn1.h"
  #include "polarssl/cipher.h"
@@ -9726,7 +9726,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  static void pkcs12_fill_buffer( unsigned char *data, size_t data_len,
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/pkcs5.c polarssl-1.2.8/library/pkcs5.c
 --- polarssl-1.2.8-downloaded/library/pkcs5.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/pkcs5.c	2014-05-21 08:16:40.078815514 +0300
++++ polarssl-1.2.8/library/pkcs5.c	2014-05-21 10:19:06.522701692 +0300
 @@ -311,105 +311,4 @@
      return( 0 );
  }
@@ -9835,7 +9835,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  #endif /* POLARSSL_PKCS5_C */
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/rsa.c polarssl-1.2.8/library/rsa.c
 --- polarssl-1.2.8-downloaded/library/rsa.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/rsa.c	2014-05-21 08:16:40.078815514 +0300
++++ polarssl-1.2.8/library/rsa.c	2014-05-21 10:19:06.522701692 +0300
 @@ -1281,186 +1281,4 @@
      mpi_free( &ctx->E  ); mpi_free( &ctx->N  );
  }
@@ -10025,7 +10025,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  #endif
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/sha1.c polarssl-1.2.8/library/sha1.c
 --- polarssl-1.2.8-downloaded/library/sha1.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/sha1.c	2014-05-21 08:16:40.078815514 +0300
++++ polarssl-1.2.8/library/sha1.c	2014-05-21 10:19:06.522701692 +0300
 @@ -440,185 +440,5 @@
      memset( &ctx, 0, sizeof( sha1_context ) );
  }
@@ -10214,7 +10214,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  #endif
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/sha2.c polarssl-1.2.8/library/sha2.c
 --- polarssl-1.2.8-downloaded/library/sha2.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/sha2.c	2014-05-21 08:16:40.078815514 +0300
++++ polarssl-1.2.8/library/sha2.c	2014-05-21 10:19:06.522701692 +0300
 @@ -447,259 +447,4 @@
      memset( &ctx, 0, sizeof( sha2_context ) );
  }
@@ -10477,7 +10477,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  #endif
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/sha4.c polarssl-1.2.8/library/sha4.c
 --- polarssl-1.2.8-downloaded/library/sha4.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/sha4.c	2014-05-21 08:16:40.078815514 +0300
++++ polarssl-1.2.8/library/sha4.c	2014-05-21 10:19:06.522701692 +0300
 @@ -446,315 +446,4 @@
      memset( &ctx, 0, sizeof( sha4_context ) );
  }
@@ -11021,7 +11021,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 -#endif /* POLARSSL_SSL_CACHE_C */
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/ssl_cli.c polarssl-1.2.8/library/ssl_cli.c
 --- polarssl-1.2.8-downloaded/library/ssl_cli.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/ssl_cli.c	2014-05-21 08:16:40.082815514 +0300
++++ polarssl-1.2.8/library/ssl_cli.c	2014-05-21 10:19:06.522701692 +0300
 @@ -196,10 +196,6 @@
          sig_alg_list[sig_alg_len++] = SSL_HASH_SHA1;
          sig_alg_list[sig_alg_len++] = SSL_SIG_RSA;
@@ -11256,7 +11256,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
              hash_id = SIG_RSA_SHA384;
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/ssl_srv.c polarssl-1.2.8/library/ssl_srv.c
 --- polarssl-1.2.8-downloaded/library/ssl_srv.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/ssl_srv.c	2014-05-21 08:16:40.082815514 +0300
++++ polarssl-1.2.8/library/ssl_srv.c	2014-05-21 10:19:06.522701692 +0300
 @@ -146,7 +146,6 @@
              p += 2;
              continue;
@@ -11789,7 +11789,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
          {
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/ssl_tls.c polarssl-1.2.8/library/ssl_tls.c
 --- polarssl-1.2.8-downloaded/library/ssl_tls.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/ssl_tls.c	2014-05-21 08:16:40.082815514 +0300
++++ polarssl-1.2.8/library/ssl_tls.c	2014-05-21 10:19:06.522701692 +0300
 @@ -36,8 +36,6 @@
  #if defined(POLARSSL_SSL_TLS_C)
  
@@ -17598,7 +17598,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  #endif
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/x509encode.c polarssl-1.2.8/library/x509encode.c
 --- polarssl-1.2.8-downloaded/library/x509encode.c	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/library/x509encode.c	2014-05-21 08:16:40.094815514 +0300
++++ polarssl-1.2.8/library/x509encode.c	2014-05-21 10:19:06.522701692 +0300
 @@ -0,0 +1,547 @@
 +/*
 + * x509encode.c
@@ -18149,7 +18149,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/x509parse.c polarssl-1.2.8/library/x509parse.c
 --- polarssl-1.2.8-downloaded/library/x509parse.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/x509parse.c	2014-05-21 08:16:40.082815514 +0300
++++ polarssl-1.2.8/library/x509parse.c	2014-05-21 10:19:06.522701692 +0300
 @@ -124,28 +124,6 @@
      return( 0 );
  }
@@ -18966,7 +18966,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  #endif
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/library/x509write.c polarssl-1.2.8/library/x509write.c
 --- polarssl-1.2.8-downloaded/library/x509write.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/library/x509write.c	2014-05-21 08:16:40.082815514 +0300
++++ polarssl-1.2.8/library/x509write.c	2014-05-21 10:19:06.522701692 +0300
 @@ -33,7 +33,6 @@
  #include "polarssl/sha1.h"
  #include "polarssl/sha2.h"
@@ -19232,7 +19232,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 -#endif
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/Makefile polarssl-1.2.8/Makefile
 --- polarssl-1.2.8-downloaded/Makefile	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/Makefile	2014-05-21 08:16:40.110815513 +0300
++++ polarssl-1.2.8/Makefile	2014-05-21 10:19:06.530701692 +0300
 @@ -1,4 +1,3 @@
 -
  DESTDIR=/usr/local
@@ -19327,7 +19327,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  	mkdir -p apidoc
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/ndk/default.properties polarssl-1.2.8/ndk/default.properties
 --- polarssl-1.2.8-downloaded/ndk/default.properties	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/ndk/default.properties	2014-05-21 08:16:40.094815514 +0300
++++ polarssl-1.2.8/ndk/default.properties	2014-05-21 10:19:06.522701692 +0300
 @@ -0,0 +1,11 @@
 +# This file is automatically generated by Android Tools.
 +# Do not modify this file -- YOUR CHANGES WILL BE ERASED!
@@ -19342,7 +19342,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +target=android-11
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/ndk/jni/Android.mk polarssl-1.2.8/ndk/jni/Android.mk
 --- polarssl-1.2.8-downloaded/ndk/jni/Android.mk	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/ndk/jni/Android.mk	2014-05-21 08:16:40.094815514 +0300
++++ polarssl-1.2.8/ndk/jni/Android.mk	2014-05-21 10:19:06.522701692 +0300
 @@ -0,0 +1,58 @@
 +# Copyright (C) 2009 The Android Open Source Project
 +#
@@ -19404,12 +19404,12 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/ndk/jni/Application.mk polarssl-1.2.8/ndk/jni/Application.mk
 --- polarssl-1.2.8-downloaded/ndk/jni/Application.mk	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/ndk/jni/Application.mk	2014-05-21 08:16:40.094815514 +0300
++++ polarssl-1.2.8/ndk/jni/Application.mk	2014-05-21 10:19:06.522701692 +0300
 @@ -0,0 +1 @@
 +APP_MODULES := polarssl
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/ndk/Makefile polarssl-1.2.8/ndk/Makefile
 --- polarssl-1.2.8-downloaded/ndk/Makefile	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/ndk/Makefile	2014-05-21 08:16:40.094815514 +0300
++++ polarssl-1.2.8/ndk/Makefile	2014-05-21 10:19:06.522701692 +0300
 @@ -0,0 +1,7 @@
 +all:
 +	../../android-ndk-r8e/ndk-build
@@ -19420,7 +19420,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/programs/Makefile polarssl-1.2.8/programs/Makefile
 --- polarssl-1.2.8-downloaded/programs/Makefile	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/programs/Makefile	2014-05-21 08:16:40.102815513 +0300
++++ polarssl-1.2.8/programs/Makefile	2014-05-21 10:38:05.878684040 +0300
 @@ -2,8 +2,11 @@
  # To compile on SunOS: add "-lsocket -lnsl" to LDFLAGS
  # To compile on MinGW: add "-lws2_32" to LDFLAGS or define WINDOWS in your env
@@ -19434,7 +19434,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  OFLAGS	= -O2
  LDFLAGS	+= -L../library -lpolarssl $(SYS_LDFLAGS)
  
-@@ -20,27 +23,28 @@
+@@ -20,27 +23,25 @@
  LDFLAGS += -lz
  endif
  
@@ -19475,10 +19475,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +	pkey/rsa_verify \
 +	pkey/rsa_sign_pss \
 +	pkey/rsa_verify_pss \
-+	ssl/ssl_client1 \
 +	ssl/ssl_server \
-+	ssl/ssl_fork_server \
-+	ssl/ssl_mail_client \
 +	random/gen_entropy \
 +	random/gen_random_ctr_drbg 
  
@@ -19486,7 +19483,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  APPS +=	test/o_p_test
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/programs/pkey/dh_client.c polarssl-1.2.8/programs/pkey/dh_client.c
 --- polarssl-1.2.8-downloaded/programs/pkey/dh_client.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/programs/pkey/dh_client.c	2014-05-21 08:16:40.098815513 +0300
++++ polarssl-1.2.8/programs/pkey/dh_client.c	2014-05-21 10:19:06.526701692 +0300
 @@ -61,27 +61,22 @@
  #else
  int main( int argc, char *argv[] )
@@ -19614,7 +19611,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  #if defined(_WIN32)
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/programs/pkey/dh_server.c polarssl-1.2.8/programs/pkey/dh_server.c
 --- polarssl-1.2.8-downloaded/programs/pkey/dh_server.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/programs/pkey/dh_server.c	2014-05-21 08:16:40.098815513 +0300
++++ polarssl-1.2.8/programs/pkey/dh_server.c	2014-05-21 10:19:06.526701692 +0300
 @@ -61,28 +61,23 @@
  #else
  int main( int argc, char *argv[] )
@@ -19764,7 +19761,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  #if defined(_WIN32)
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/programs/pkey/key_app.c polarssl-1.2.8/programs/pkey/key_app.c
 --- polarssl-1.2.8-downloaded/programs/pkey/key_app.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/programs/pkey/key_app.c	2014-05-21 08:16:40.094815514 +0300
++++ polarssl-1.2.8/programs/pkey/key_app.c	2014-05-21 10:19:06.526701692 +0300
 @@ -167,7 +167,8 @@
                  printf( " failed\n  !  fopen returned NULL\n" );
                  goto exit;
@@ -19777,7 +19774,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
              i = strlen( buf );
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/programs/pkey/rsa_genkey.c polarssl-1.2.8/programs/pkey/rsa_genkey.c
 --- polarssl-1.2.8-downloaded/programs/pkey/rsa_genkey.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/programs/pkey/rsa_genkey.c	2014-05-21 08:16:40.098815513 +0300
++++ polarssl-1.2.8/programs/pkey/rsa_genkey.c	2014-05-21 10:19:06.526701692 +0300
 @@ -37,7 +37,7 @@
  #include "polarssl/x509.h"
  #include "polarssl/rsa.h"
@@ -19819,7 +19816,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
      x509write_add_validity( &cert, "2007-09-06 17:00:32",
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/programs/pkey/rsa_priv.txt polarssl-1.2.8/programs/pkey/rsa_priv.txt
 --- polarssl-1.2.8-downloaded/programs/pkey/rsa_priv.txt	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/programs/pkey/rsa_priv.txt	2014-05-21 08:16:40.098815513 +0300
++++ polarssl-1.2.8/programs/pkey/rsa_priv.txt	2014-05-21 10:19:06.526701692 +0300
 @@ -1,8 +1,8 @@
 -N = A1D46FBA2318F8DCEF16C280948B1CF27966B9B47225ED2989F8D74B45BD36049C0AAB5AD0FF003553BA843C8E12782FC5873BB89A3DC84B883D25666CD22BF3ACD5B675969F8BEBFBCAC93FDD927C7442B178B10D1DFF9398E52316AAE0AF74E594650BDC3C670241D418684593CDA1A7B9DC4F20D2FDC6F66344074003E211
 +N = C87108B52AF216F8BFAC8A50BE929B176E167CC7C583CF49ACADF054B4BD4A4EFF1BCAAB6C7EA8434ABE585274E1EEA96D5DA9A9A527801B8E2549FD3011106400E1886D082D19914EAEAF063ED98E77805B3E245BD1E78C2BC7CAE7AE867BE1A20E6D095052982A649C012DA1C0527B0AF16BAB128FB42C5D67FF2040C54C1B4E4F08835B8533C95470FDDF607885B93487B2995035219485296A1754A52C8620EB26FD51548DFEC9A31E46F97BE97792DF04211FAC0C8499BA11A8110DA67C04F0D8F4EF54D2E37FED448849640D2DA6EF78AC4A812CDDA4F46D6239CEEE805D5B30A4BB8EC4BB52DF5FFA7310D4B46BD3B2B39D202311FC7A655DAAD2AA88817C58628712630FACE8428B7C61645C09CF465BED79171598C91623312B3C11CF7C54C26550194170F95876ECD24149220C35949A1B2C653401359876D783DB70D3010F0A93413F46B3840F29E12C0AC0C7BD21173CDD4BFE0D14E2E931855E3CAC0368DE462E9475D9C9EEB3D6C632C58CFC938F926C3C1354E4514431E0A86C20B390F6CBA95414970B095AEBD2AC29F5D43A523781A5C71DC3C62694D4643D362EA1A1261DDFF6A90CE69615CADD59533DCC9E5D6C946D4E5692BF2304A06E06B2B02152CC6503EB5D58FF440183098F15CCB4BC2081D2FE828042686C6E61053CE68F2EC1739D8F7CBECBD1B94C5C559AA49394062260D793D7AB9A185D
@@ -19838,7 +19835,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +QP = 681B9DD1B10D43581DC2B34F5E81B7060404ED3C72C2507829ABB3281397658EEA0671A17506332EFD5DACD84508F7237EFF2F1B13D701947D283D4B4A46355B30026E45C08F0A02396019443E3B911C7BF41CB2F8437DCF896FDD9E70238C375225FE55DE674E9066BF70E5F70795CD117E2B0672CA9BA26FBFC67B391C74247D039E3AEAF8A5D5A4B5057BE39C80F5B95306F3A12BC243F036B0D92B700462A7FF47BB449E1850BCEEC35DA53D37331B0B2BEEB8B8095634A168F9BDE3D1E0119958BC225DD9A5FEACABD0FDF45E042A4C415D739FE0FF4AA383DA253B69221386995DE21AF7DF27B8774B46F751B36005ACD1110A8EF670739F78176AD285
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/programs/pkey/rsa_pub.txt polarssl-1.2.8/programs/pkey/rsa_pub.txt
 --- polarssl-1.2.8-downloaded/programs/pkey/rsa_pub.txt	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/programs/pkey/rsa_pub.txt	2014-05-21 08:16:40.098815513 +0300
++++ polarssl-1.2.8/programs/pkey/rsa_pub.txt	2014-05-21 10:19:06.526701692 +0300
 @@ -1,2 +1,2 @@
 -N = A1D46FBA2318F8DCEF16C280948B1CF27966B9B47225ED2989F8D74B45BD36049C0AAB5AD0FF003553BA843C8E12782FC5873BB89A3DC84B883D25666CD22BF3ACD5B675969F8BEBFBCAC93FDD927C7442B178B10D1DFF9398E52316AAE0AF74E594650BDC3C670241D418684593CDA1A7B9DC4F20D2FDC6F66344074003E211
 +N = C87108B52AF216F8BFAC8A50BE929B176E167CC7C583CF49ACADF054B4BD4A4EFF1BCAAB6C7EA8434ABE585274E1EEA96D5DA9A9A527801B8E2549FD3011106400E1886D082D19914EAEAF063ED98E77805B3E245BD1E78C2BC7CAE7AE867BE1A20E6D095052982A649C012DA1C0527B0AF16BAB128FB42C5D67FF2040C54C1B4E4F08835B8533C95470FDDF607885B93487B2995035219485296A1754A52C8620EB26FD51548DFEC9A31E46F97BE97792DF04211FAC0C8499BA11A8110DA67C04F0D8F4EF54D2E37FED448849640D2DA6EF78AC4A812CDDA4F46D6239CEEE805D5B30A4BB8EC4BB52DF5FFA7310D4B46BD3B2B39D202311FC7A655DAAD2AA88817C58628712630FACE8428B7C61645C09CF465BED79171598C91623312B3C11CF7C54C26550194170F95876ECD24149220C35949A1B2C653401359876D783DB70D3010F0A93413F46B3840F29E12C0AC0C7BD21173CDD4BFE0D14E2E931855E3CAC0368DE462E9475D9C9EEB3D6C632C58CFC938F926C3C1354E4514431E0A86C20B390F6CBA95414970B095AEBD2AC29F5D43A523781A5C71DC3C62694D4643D362EA1A1261DDFF6A90CE69615CADD59533DCC9E5D6C946D4E5692BF2304A06E06B2B02152CC6503EB5D58FF440183098F15CCB4BC2081D2FE828042686C6E61053CE68F2EC1739D8F7CBECBD1B94C5C559AA49394062260D793D7AB9A185D
@@ -19940,50 +19937,82 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 -#endif /* POLARSSL_HAVEGE_C */
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/programs/ssl/ssl_client1.c polarssl-1.2.8/programs/ssl/ssl_client1.c
 --- polarssl-1.2.8-downloaded/programs/ssl/ssl_client1.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/programs/ssl/ssl_client1.c	2014-05-21 08:16:40.102815513 +0300
-@@ -45,13 +45,12 @@
- 
- #define DEBUG_LEVEL 1
- 
++++ polarssl-1.2.8/programs/ssl/ssl_client1.c	1970-01-01 02:00:00.000000000 +0200
+@@ -1,294 +0,0 @@
+-/*
+- *  SSL client demonstration program
+- *
+- *  Copyright (C) 2006-2011, Brainspark B.V.
+- *
+- *  This file is part of PolarSSL (http://www.polarssl.org)
+- *  Lead Maintainer: Paul Bakker <polarssl_maintainer at polarssl.org>
+- *
+- *  All rights reserved.
+- *
+- *  This program is free software; you can redistribute it and/or modify
+- *  it under the terms of the GNU General Public License as published by
+- *  the Free Software Foundation; either version 2 of the License, or
+- *  (at your option) any later version.
+- *
+- *  This program is distributed in the hope that it will be useful,
+- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+- *  GNU General Public License for more details.
+- *
+- *  You should have received a copy of the GNU General Public License along
+- *  with this program; if not, write to the Free Software Foundation, Inc.,
+- *  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+- */
+-
+-#ifndef _CRT_SECURE_NO_DEPRECATE
+-#define _CRT_SECURE_NO_DEPRECATE 1
+-#endif
+-
+-#include <string.h>
+-#include <stdio.h>
+-
+-#include "polarssl/config.h"
+-
+-#include "polarssl/net.h"
+-#include "polarssl/ssl.h"
+-#include "polarssl/entropy.h"
+-#include "polarssl/ctr_drbg.h"
+-#include "polarssl/error.h"
+-#include "polarssl/certs.h"
+-
+-#define SERVER_PORT 4433
+-#define SERVER_NAME "localhost"
+-#define GET_REQUEST "GET / HTTP/1.0\r\n\r\n"
+-
+-#define DEBUG_LEVEL 1
+-
 -void my_debug( void *ctx, int level, const char *str )
-+void my_debug(void *ctx, int level, const char *str)
- {
+-{
 -    if( level < DEBUG_LEVEL )
 -    {
 -        fprintf( (FILE *) ctx, "%s", str );
 -        fflush(  (FILE *) ctx  );
 -    }
-+	if (level < DEBUG_LEVEL) {
-+		fprintf((FILE *) ctx, "%s", str);
-+		fflush((FILE *) ctx);
-+	}
- }
- 
- #if !defined(POLARSSL_BIGNUM_C) || !defined(POLARSSL_ENTROPY_C) ||  \
-@@ -60,234 +59,235 @@
-     !defined(POLARSSL_CTR_DRBG_C)
- int main( int argc, char *argv[] )
- {
+-}
+-
+-#if !defined(POLARSSL_BIGNUM_C) || !defined(POLARSSL_ENTROPY_C) ||  \
+-    !defined(POLARSSL_SSL_TLS_C) || !defined(POLARSSL_SSL_CLI_C) || \
+-    !defined(POLARSSL_NET_C) || !defined(POLARSSL_RSA_C) ||         \
+-    !defined(POLARSSL_CTR_DRBG_C)
+-int main( int argc, char *argv[] )
+-{
 -    ((void) argc);
 -    ((void) argv);
-+	((void) argc);
-+	((void) argv);
- 
+-
 -    printf("POLARSSL_BIGNUM_C and/or POLARSSL_ENTROPY_C and/or "
 -           "POLARSSL_SSL_TLS_C and/or POLARSSL_SSL_CLI_C and/or "
 -           "POLARSSL_NET_C and/or POLARSSL_RSA_C and/or "
 -           "POLARSSL_CTR_DRBG_C not defined.\n");
 -    return( 0 );
-+	printf("POLARSSL_BIGNUM_C and/or POLARSSL_ENTROPY_C and/or "
-+			"POLARSSL_SSL_TLS_C and/or POLARSSL_SSL_CLI_C and/or "
-+			"POLARSSL_NET_C and/or POLARSSL_RSA_C and/or "
-+			"POLARSSL_CTR_DRBG_C not defined.\n");
-+	return( 0 );
- }
- #else
+-}
+-#else
 -int main( int argc, char *argv[] )
-+int main(int argc, char *argv[])
- {
+-{
 -    int ret, len, server_fd;
 -    unsigned char buf[1024];
 -    const char *pers = "ssl_client1";
@@ -20021,54 +20050,15 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 -     */
 -    printf( "  . Loading the CA root certificate ..." );
 -    fflush( stdout );
-+	int ret, len, server_fd;
-+	unsigned char buf[1024];
-+	const char *pers = "ssl_client1";
-+
-+	entropy_context entropy;
-+	ctr_drbg_context ctr_drbg;
-+	ssl_context ssl;
-+	x509_cert cacert;
-+
-+	((void) argc);
-+	((void) argv);
-+
-+	/*
-+	 * 0. Initialize the RNG and the session data
-+	 */
-+	memset(&ssl, 0, sizeof(ssl_context));
-+	memset(&cacert, 0, sizeof(x509_cert));
-+
-+	printf("\n  . Seeding the random number generator...");
-+	fflush(stdout);
-+
-+	entropy_init(&entropy);
-+	if ((ret = ctr_drbg_init(&ctr_drbg, entropy_func, &entropy,
-+			(const unsigned char *) pers, strlen(pers))) != 0) {
-+		printf(" failed\n  ! ctr_drbg_init returned %d\n", ret);
-+		goto exit;
-+	}
-+
-+	printf(" ok\n");
-+
-+	/*
-+	 * 0. Initialize certificates
-+	 */
-+	printf("  . Loading the CA root certificate ...");
-+	fflush(stdout);
- 
- #if defined(POLARSSL_CERTS_C)
+-
+-#if defined(POLARSSL_CERTS_C)
 -    ret = x509parse_crt( &cacert, (const unsigned char *) test_ca_crt,
 -                         strlen( test_ca_crt ) );
-+	ret = x509parse_crt(&cacert, (const unsigned char *) test_ca_crt,
-+			strlen(test_ca_crt));
- #else
+-#else
 -    ret = 1;
 -    printf("POLARSSL_CERTS_C not defined.");
-+	ret = 1;
-+	printf("POLARSSL_CERTS_C not defined.");
- #endif
- 
+-#endif
+-
 -    if( ret < 0 )
 -    {
 -        printf( " failed\n  !  x509parse_crt returned -0x%x\n\n", -ret );
@@ -20213,200 +20203,1226 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 -        printf( " %d bytes read\n\n%s", len, (char *) buf );
 -    }
 -    while( 1 );
-+	if (ret < 0) {
-+		printf(" failed\n  !  x509parse_crt returned -0x%x\n\n", -ret);
-+		goto exit;
-+	}
-+
-+	printf(" ok (%d skipped)\n", ret);
-+
-+	/*
-+	 * 1. Start the connection
-+	 */
-+	printf("  . Connecting to tcp/%s/%4d...", SERVER_NAME, SERVER_PORT);
-+	fflush(stdout);
-+
-+	if ((ret = net_connect(&server_fd, SERVER_NAME, SERVER_PORT)) != 0) {
-+		printf(" failed\n  ! net_connect returned %d\n\n", ret);
-+		goto exit;
-+	}
-+
-+	printf(" ok\n");
-+
-+	/*
-+	 * 2. Setup stuff
-+	 */
-+	printf("  . Setting up the SSL/TLS structure...");
-+	fflush(stdout);
-+
-+	if ((ret = ssl_init(&ssl)) != 0) {
-+		printf(" failed\n  ! ssl_init returned %d\n\n", ret);
-+		goto exit;
-+	}
-+
-+	printf(" ok\n");
-+
-+	ssl_set_endpoint(&ssl, SSL_IS_CLIENT);
-+	ssl_set_authmode(&ssl, SSL_VERIFY_OPTIONAL);
-+	ssl_set_ca_chain(&ssl, &cacert, NULL, "PolarSSL Server 1");
-+
-+	ssl_set_rng(&ssl, ctr_drbg_random, &ctr_drbg);
-+	ssl_set_dbg(&ssl, my_debug, stdout);
-+	ssl_set_bio(&ssl, net_recv, &server_fd, net_send, &server_fd);
-+
-+	/*
-+	 * 4. Handshake
-+	 */
-+	printf("  . Performing the SSL/TLS handshake...");
-+	fflush(stdout);
-+
-+	while ((ret = ssl_handshake(&ssl)) != 0) {
-+		if (ret != POLARSSL_ERR_NET_WANT_READ
-+				&& ret != POLARSSL_ERR_NET_WANT_WRITE) {
-+			printf(" failed\n  ! ssl_handshake returned -0x%x\n\n", -ret);
-+			goto exit;
-+		}
-+	}
-+
-+	printf(" ok\n");
-+
-+	/*
-+	 * 5. Verify the server certificate
-+	 */
-+	printf("  . Verifying peer X.509 certificate...");
-+
-+	if ((ret = ssl_get_verify_result(&ssl)) != 0) {
-+		printf(" failed\n");
-+
-+		if ((ret & BADCERT_EXPIRED) != 0)
-+			printf("  ! server certificate has expired\n");
-+
-+		if ((ret & BADCERT_REVOKED) != 0)
-+			printf("  ! server certificate has been revoked\n");
-+
-+		if ((ret & BADCERT_CN_MISMATCH) != 0)
-+			printf("  ! CN mismatch (expected CN=%s)\n", "PolarSSL Server 1");
-+
-+		if ((ret & BADCERT_NOT_TRUSTED) != 0)
-+			printf("  ! self-signed or not signed by a trusted CA\n");
-+
-+		printf("\n");
-+	} else
-+		printf(" ok\n");
-+
-+	/*
-+	 * 3. Write the GET request
-+	 */
-+	printf("  > Write to server:");
-+	fflush(stdout);
-+
-+	while (1) {
-+		//len = sprintf( (char *) buf, GET_REQUEST );
-+		if (fgets((char*) buf, sizeof(buf) - 1, stdin) == NULL )
-+			continue;
-+
-+		while ((ret = ssl_write(&ssl, buf, strlen((char*) buf))) <= 0) {
-+			if (ret != POLARSSL_ERR_NET_WANT_READ
-+					&& ret != POLARSSL_ERR_NET_WANT_WRITE) {
-+				printf(" failed\n  ! ssl_write returned %d\n\n", ret);
-+				goto exit;
-+			}
-+		}
-+
-+		buf[0] = 0;
-+
-+		while ((ret = ssl_read(&ssl, buf, sizeof(buf) - 1)) <= 0) {
-+			if (ret != POLARSSL_ERR_NET_WANT_READ
-+					&& ret != POLARSSL_ERR_NET_WANT_WRITE) {
-+				printf(" failed\n  ! ssl_read returned %d\n\n", ret);
-+				goto exit;
-+			}
-+		}
-+
-+		printf("read %d bytes\n%s\n", ret, buf);
-+
-+	}
-+
-+	len = ret;
-+	printf(" %d bytes written\n\n%s", len, (char *) buf);
-+
-+	/*
-+	 * 7. Read the HTTP response
-+	 */
-+	printf("  < Read from server:");
-+	fflush(stdout);
-+
-+	do {
-+		len = sizeof(buf) - 1;
-+		memset(buf, 0, sizeof(buf));
-+		ret = ssl_read(&ssl, buf, len);
-+
-+		if (ret == POLARSSL_ERR_NET_WANT_READ
-+				|| ret == POLARSSL_ERR_NET_WANT_WRITE)
-+			continue;
-+
-+		if (ret == POLARSSL_ERR_SSL_PEER_CLOSE_NOTIFY)
-+			break;
-+
-+		if (ret < 0) {
-+			printf("failed\n  ! ssl_read returned %d\n\n", ret);
-+			break;
-+		}
-+
-+		if (ret == 0) {
-+			printf("\n\nEOF\n\n");
-+			break;
-+		}
-+
-+		len = ret;
-+		printf(" %d bytes read\n\n%s", len, (char *) buf);
-+	} while (1);
- 
+-
 -    ssl_close_notify( &ssl );
-+	ssl_close_notify(&ssl);
- 
+-
 -exit:
-+	exit:
- 
- #ifdef POLARSSL_ERROR_C
+-
+-#ifdef POLARSSL_ERROR_C
 -    if( ret != 0 )
 -    {
 -        char error_buf[100];
 -        error_strerror( ret, error_buf, 100 );
 -        printf("Last error was: %d - %s\n\n", ret, error_buf );
 -    }
-+	if (ret != 0) {
-+		char error_buf[100];
-+		error_strerror(ret, error_buf, 100);
-+		printf("Last error was: %d - %s\n\n", ret, error_buf);
-+	}
- #endif
- 
+-#endif
+-
 -    x509_free( &cacert );
 -    net_close( server_fd );
 -    ssl_free( &ssl );
-+	x509_free(&cacert);
-+	net_close(server_fd);
-+	ssl_free(&ssl);
- 
+-
 -    memset( &ssl, 0, sizeof( ssl ) );
-+	memset(&ssl, 0, sizeof(ssl));
- 
- #if defined(_WIN32)
+-
+-#if defined(_WIN32)
 -    printf( "  + Press Enter to exit this program.\n" );
 -    fflush( stdout ); getchar();
-+	printf( "  + Press Enter to exit this program.\n" );
-+	fflush( stdout ); getchar();
- #endif
- 
+-#endif
+-
 -    return( ret );
-+	return (ret);
- }
- #endif /* POLARSSL_BIGNUM_C && POLARSSL_ENTROPY_C && POLARSSL_SSL_TLS_C &&
-           POLARSSL_SSL_CLI_C && POLARSSL_NET_C && POLARSSL_RSA_C &&
+-}
+-#endif /* POLARSSL_BIGNUM_C && POLARSSL_ENTROPY_C && POLARSSL_SSL_TLS_C &&
+-          POLARSSL_SSL_CLI_C && POLARSSL_NET_C && POLARSSL_RSA_C &&
+-          POLARSSL_CTR_DRBG_C */
+diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/programs/ssl/ssl_fork_server.c polarssl-1.2.8/programs/ssl/ssl_fork_server.c
+--- polarssl-1.2.8-downloaded/programs/ssl/ssl_fork_server.c	2013-06-21 16:11:10.000000000 +0300
++++ polarssl-1.2.8/programs/ssl/ssl_fork_server.c	1970-01-01 02:00:00.000000000 +0200
+@@ -1,376 +0,0 @@
+-/*
+- *  SSL server demonstration program using fork() for handling multiple clients
+- *
+- *  Copyright (C) 2006-2011, Brainspark B.V.
+- *
+- *  This file is part of PolarSSL (http://www.polarssl.org)
+- *  Lead Maintainer: Paul Bakker <polarssl_maintainer at polarssl.org>
+- *
+- *  All rights reserved.
+- *
+- *  This program is free software; you can redistribute it and/or modify
+- *  it under the terms of the GNU General Public License as published by
+- *  the Free Software Foundation; either version 2 of the License, or
+- *  (at your option) any later version.
+- *
+- *  This program is distributed in the hope that it will be useful,
+- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+- *  GNU General Public License for more details.
+- *
+- *  You should have received a copy of the GNU General Public License along
+- *  with this program; if not, write to the Free Software Foundation, Inc.,
+- *  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+- */
+-
+-#ifndef _CRT_SECURE_NO_DEPRECATE
+-#define _CRT_SECURE_NO_DEPRECATE 1
+-#endif
+-
+-#if defined(_WIN32)
+-#include <windows.h>
+-#endif
+-
+-#include <string.h>
+-#include <stdlib.h>
+-#include <stdio.h>
+-#include <unistd.h>
+-#include <signal.h>
+-
+-#include "polarssl/config.h"
+-
+-#include "polarssl/entropy.h"
+-#include "polarssl/ctr_drbg.h"
+-#include "polarssl/certs.h"
+-#include "polarssl/x509.h"
+-#include "polarssl/ssl.h"
+-#include "polarssl/net.h"
+-#include "polarssl/timing.h"
+-
+-#define HTTP_RESPONSE \
+-    "HTTP/1.0 200 OK\r\nContent-Type: text/html\r\n\r\n" \
+-    "<h2>PolarSSL Test Server</h2>\r\n" \
+-    "<p>Successful connection using: %s</p>\r\n"
+-
+-#if !defined(POLARSSL_BIGNUM_C) || !defined(POLARSSL_CERTS_C) ||    \
+-    !defined(POLARSSL_ENTROPY_C) || !defined(POLARSSL_SSL_TLS_C) || \
+-    !defined(POLARSSL_SSL_SRV_C) || !defined(POLARSSL_NET_C) ||     \
+-    !defined(POLARSSL_RSA_C) || !defined(POLARSSL_CTR_DRBG_C)
+-int main( int argc, char *argv[] )
+-{
+-    ((void) argc);
+-    ((void) argv);
+-
+-    printf("POLARSSL_BIGNUM_C and/or POLARSSL_CERTS_C and/or POLARSSL_ENTROPY_C "
+-           "and/or POLARSSL_SSL_TLS_C and/or POLARSSL_SSL_SRV_C and/or "
+-           "POLARSSL_NET_C and/or POLARSSL_RSA_C and/or "
+-           "POLARSSL_CTR_DRBG_C not defined.\n");
+-    return( 0 );
+-}
+-#elif defined(_WIN32)
+-int main( int argc, char *argv[] )
+-{
+-    ((void) argc);
+-    ((void) argv);
+-
+-    printf("_WIN32 defined. This application requires fork() and signals "
+-           "to work correctly.\n");
+-    return( 0 );
+-}
+-#else
+-
+-#define DEBUG_LEVEL 0
+-
+-void my_debug( void *ctx, int level, const char *str )
+-{
+-    if( level < DEBUG_LEVEL )
+-    {
+-        fprintf( (FILE *) ctx, "%s", str );
+-        fflush(  (FILE *) ctx  );
+-    }
+-}
+-
+-int main( int argc, char *argv[] )
+-{
+-    int ret, len, cnt = 0, pid;
+-    int listen_fd;
+-    int client_fd;
+-    unsigned char buf[1024];
+-    const char *pers = "ssl_fork_server";
+-
+-    entropy_context entropy;
+-    ctr_drbg_context ctr_drbg;
+-    ssl_context ssl;
+-    x509_cert srvcert;
+-    rsa_context rsa;
+-
+-    ((void) argc);
+-    ((void) argv);
+-
+-    signal( SIGCHLD, SIG_IGN );
+-
+-    /*
+-     * 0. Initial seeding of the RNG
+-     */
+-    printf( "\n  . Initial seeding of the random generator..." );
+-    fflush( stdout );
+-
+-    entropy_init( &entropy );
+-    if( ( ret = ctr_drbg_init( &ctr_drbg, entropy_func, &entropy,
+-                               (const unsigned char *) pers,
+-                               strlen( pers ) ) ) != 0 )
+-    {
+-        printf( " failed\n  ! ctr_drbg_init returned %d\n", ret );
+-        goto exit;
+-    }
+-
+-    printf( " ok\n" );
+-
+-    /*
+-     * 1. Load the certificates and private RSA key
+-     */
+-    printf( "  . Loading the server cert. and key..." );
+-    fflush( stdout );
+-
+-    memset( &srvcert, 0, sizeof( x509_cert ) );
+-
+-    /*
+-     * This demonstration program uses embedded test certificates.
+-     * Instead, you may want to use x509parse_crtfile() to read the
+-     * server and CA certificates, as well as x509parse_keyfile().
+-     */
+-    ret = x509parse_crt( &srvcert, (const unsigned char *) test_srv_crt,
+-                         strlen( test_srv_crt ) );
+-    if( ret != 0 )
+-    {
+-        printf( " failed\n  !  x509parse_crt returned %d\n\n", ret );
+-        goto exit;
+-    }
+-
+-    ret = x509parse_crt( &srvcert, (const unsigned char *) test_ca_crt,
+-                         strlen( test_ca_crt ) );
+-    if( ret != 0 )
+-    {
+-        printf( " failed\n  !  x509parse_crt returned %d\n\n", ret );
+-        goto exit;
+-    }
+-
+-    rsa_init( &rsa, RSA_PKCS_V15, 0 );
+-    ret =  x509parse_key( &rsa, (const unsigned char *) test_srv_key,
+-                          strlen( test_srv_key ), NULL, 0 );
+-    if( ret != 0 )
+-    {
+-        printf( " failed\n  !  x509parse_key returned %d\n\n", ret );
+-        goto exit;
+-    }
+-
+-    printf( " ok\n" );
+-
+-    /*
+-     * 2. Setup the listening TCP socket
+-     */
+-    printf( "  . Bind on https://localhost:4433/ ..." );
+-    fflush( stdout );
+-
+-    if( ( ret = net_bind( &listen_fd, NULL, 4433 ) ) != 0 )
+-    {
+-        printf( " failed\n  ! net_bind returned %d\n\n", ret );
+-        goto exit;
+-    }
+-
+-    printf( " ok\n" );
+-
+-    while( 1 )
+-    {
+-        /*
+-         * 3. Wait until a client connects
+-         */
+-        client_fd = -1;
+-        memset( &ssl, 0, sizeof( ssl ) );
+-
+-        printf( "  . Waiting for a remote connection ..." );
+-        fflush( stdout );
+-
+-        if( ( ret = net_accept( listen_fd, &client_fd, NULL ) ) != 0 )
+-        {
+-            printf( " failed\n  ! net_accept returned %d\n\n", ret );
+-            goto exit;
+-        }
+-
+-        printf( " ok\n" );
+-
+-        /*
+-         * 3.5. Forking server thread
+-         */
+-
+-        pid = fork();
+-
+-        printf( "  . Forking to handle connection ..." );
+-        fflush( stdout );
+-
+-        if( pid < 0 )
+-        {
+-            printf(" failed\n  ! fork returned %d\n\n", pid );
+-            goto exit;
+-        }
+-
+-        printf( " ok\n" );
+-
+-        if( pid != 0 )
+-        {
+-            if( ( ret = ctr_drbg_reseed( &ctr_drbg,
+-                                         (const unsigned char *) "parent",
+-                                         6 ) ) != 0 )
+-            {
+-                printf( " failed\n  ! ctr_drbg_reseed returned %d\n", ret );
+-                goto exit;
+-            }
+-
+-            close( client_fd );
+-            continue;
+-        }
+-
+-        close( listen_fd );
+-
+-        /*
+-         * 4. Setup stuff
+-         */
+-        printf( "  . Setting up the SSL data...." );
+-        fflush( stdout );
+-
+-        if( ( ret = ctr_drbg_reseed( &ctr_drbg,
+-                                     (const unsigned char *) "child",
+-                                     5 ) ) != 0 )
+-        {
+-            printf( " failed\n  ! ctr_drbg_reseed returned %d\n", ret );
+-            goto exit;
+-        }
+-        
+-        if( ( ret = ssl_init( &ssl ) ) != 0 )
+-        {
+-            printf( " failed\n  ! ssl_init returned %d\n\n", ret );
+-            goto exit;
+-        }
+-
+-        printf( " ok\n" );
+-
+-        ssl_set_endpoint( &ssl, SSL_IS_SERVER );
+-        ssl_set_authmode( &ssl, SSL_VERIFY_NONE );
+-
+-        ssl_set_rng( &ssl, ctr_drbg_random, &ctr_drbg );
+-        ssl_set_dbg( &ssl, my_debug, stdout );
+-        ssl_set_bio( &ssl, net_recv, &client_fd,
+-                           net_send, &client_fd );
+-
+-        ssl_set_ca_chain( &ssl, srvcert.next, NULL, NULL );
+-        ssl_set_own_cert( &ssl, &srvcert, &rsa );
+-
+-        /*
+-         * 5. Handshake
+-         */
+-        printf( "  . Performing the SSL/TLS handshake..." );
+-        fflush( stdout );
+-
+-        while( ( ret = ssl_handshake( &ssl ) ) != 0 )
+-        {
+-            if( ret != POLARSSL_ERR_NET_WANT_READ && ret != POLARSSL_ERR_NET_WANT_WRITE )
+-            {
+-                printf( " failed\n  ! ssl_handshake returned %d\n\n", ret );
+-                goto exit;
+-            }
+-        }
+-
+-        printf( " ok\n" );
+-
+-        /*
+-         * 6. Read the HTTP Request
+-         */
+-        printf( "  < Read from client:" );
+-        fflush( stdout );
+-
+-        do
+-        {
+-            len = sizeof( buf ) - 1;
+-            memset( buf, 0, sizeof( buf ) );
+-            ret = ssl_read( &ssl, buf, len );
+-
+-            if( ret == POLARSSL_ERR_NET_WANT_READ || ret == POLARSSL_ERR_NET_WANT_WRITE )
+-                continue;
+-
+-            if( ret <= 0 )
+-            {
+-                switch( ret )
+-                {
+-                    case POLARSSL_ERR_SSL_PEER_CLOSE_NOTIFY:
+-                        printf( " connection was closed gracefully\n" );
+-                        break;
+-
+-                    case POLARSSL_ERR_NET_CONN_RESET:
+-                        printf( " connection was reset by peer\n" );
+-                        break;
+-
+-                    default:
+-                        printf( " ssl_read returned %d\n", ret );
+-                        break;
+-                }
+-
+-                break;
+-            }
+-
+-            len = ret;
+-            printf( " %d bytes read\n\n%s", len, (char *) buf );
+-        }
+-        while( 0 );
+-
+-        /*
+-         * 7. Write the 200 Response
+-         */
+-        printf( "  > Write to client:" );
+-        fflush( stdout );
+-
+-        len = sprintf( (char *) buf, HTTP_RESPONSE,
+-                ssl_get_ciphersuite( &ssl ) );
+-
+-        while( cnt < 100 )
+-        {
+-            while( ( ret = ssl_write( &ssl, buf, len ) ) <= 0 )
+-            {
+-                if( ret == POLARSSL_ERR_NET_CONN_RESET )
+-                {
+-                    printf( " failed\n  ! peer closed the connection\n\n" );
+-                    goto exit;
+-                }
+-
+-                if( ret != POLARSSL_ERR_NET_WANT_READ && ret != POLARSSL_ERR_NET_WANT_WRITE )
+-                {
+-                    printf( " failed\n  ! ssl_write returned %d\n\n", ret );
+-                    goto exit;
+-                }
+-            }
+-            len = ret;
+-            printf( " %d bytes written\n\n%s\n", len, (char *) buf );
+-
+-            m_sleep( 1000 );
+-        }
+-
+-        ssl_close_notify( &ssl );
+-        goto exit;
+-    }
+-
+-exit:
+-
+-    net_close( client_fd );
+-    x509_free( &srvcert );
+-    rsa_free( &rsa );
+-    ssl_free( &ssl );
+-
+-#if defined(_WIN32)
+-    printf( "  Press Enter to exit this program.\n" );
+-    fflush( stdout ); getchar();
+-#endif
+-
+-    return( ret );
+-}
+-#endif /* POLARSSL_BIGNUM_C && POLARSSL_CERTS_C && POLARSSL_ENTROPY_C &&
+-          POLARSSL_SSL_TLS_C && POLARSSL_SSL_SRV_C && POLARSSL_NET_C &&
+-          POLARSSL_RSA_C && POLARSSL_CTR_DRBG_C */
+diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/programs/ssl/ssl_mail_client.c polarssl-1.2.8/programs/ssl/ssl_mail_client.c
+--- polarssl-1.2.8-downloaded/programs/ssl/ssl_mail_client.c	2013-06-21 16:11:10.000000000 +0300
++++ polarssl-1.2.8/programs/ssl/ssl_mail_client.c	1970-01-01 02:00:00.000000000 +0200
+@@ -1,803 +0,0 @@
+-/*
+- *  SSL client for SMTP servers
+- *
+- *  Copyright (C) 2006-2011, Brainspark B.V.
+- *
+- *  This file is part of PolarSSL (http://www.polarssl.org)
+- *  Lead Maintainer: Paul Bakker <polarssl_maintainer at polarssl.org>
+- *
+- *  All rights reserved.
+- *
+- *  This program is free software; you can redistribute it and/or modify
+- *  it under the terms of the GNU General Public License as published by
+- *  the Free Software Foundation; either version 2 of the License, or
+- *  (at your option) any later version.
+- *
+- *  This program is distributed in the hope that it will be useful,
+- *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+- *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+- *  GNU General Public License for more details.
+- *
+- *  You should have received a copy of the GNU General Public License along
+- *  with this program; if not, write to the Free Software Foundation, Inc.,
+- *  51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+- */
+-
+-#ifndef _CRT_SECURE_NO_DEPRECATE
+-#define _CRT_SECURE_NO_DEPRECATE 1
+-#endif
+-
+-#include <string.h>
+-#include <stdlib.h>
+-#include <stdio.h>
+-#include <unistd.h>
+-
+-#if defined(_WIN32) || defined(_WIN32_WCE)
+-
+-#include <winsock2.h>
+-#include <windows.h>
+-
+-#if defined(_WIN32_WCE)
+-#pragma comment( lib, "ws2.lib" )
+-#else
+-#pragma comment( lib, "ws2_32.lib" )
+-#endif
+-#endif
+-
+-#include "polarssl/config.h"
+-
+-#include "polarssl/base64.h"
+-#include "polarssl/error.h"
+-#include "polarssl/net.h"
+-#include "polarssl/ssl.h"
+-#include "polarssl/entropy.h"
+-#include "polarssl/ctr_drbg.h"
+-#include "polarssl/certs.h"
+-#include "polarssl/x509.h"
+-
+-#define DFL_SERVER_NAME         "localhost"
+-#define DFL_SERVER_PORT         465
+-#define DFL_USER_NAME           "user"
+-#define DFL_USER_PWD            "password"
+-#define DFL_MAIL_FROM           ""
+-#define DFL_MAIL_TO             ""
+-#define DFL_DEBUG_LEVEL         0
+-#define DFL_CA_FILE             ""
+-#define DFL_CRT_FILE            ""
+-#define DFL_KEY_FILE            ""
+-#define DFL_FORCE_CIPHER        0
+-#define DFL_MODE                0
+-#define DFL_AUTHENTICATION      0
+-
+-#define MODE_SSL_TLS            0
+-#define MODE_STARTTLS           0
+-
+-/*
+- * global options
+- */
+-struct options
+-{
+-    const char *server_name;    /* hostname of the server (client only)     */
+-    int server_port;            /* port on which the ssl service runs       */
+-    int debug_level;            /* level of debugging                       */
+-    int authentication;         /* if authentication is required            */
+-    int mode;                   /* SSL/TLS (0) or STARTTLS (1)              */
+-    const char *user_name;      /* username to use for authentication       */
+-    const char *user_pwd;       /* password to use for authentication       */
+-    const char *mail_from;      /* E-Mail address to use as sender          */
+-    const char *mail_to;        /* E-Mail address to use as recipient       */
+-    const char *ca_file;        /* the file with the CA certificate(s)      */
+-    const char *crt_file;       /* the file with the client certificate     */
+-    const char *key_file;       /* the file with the client key             */
+-    int force_ciphersuite[2];   /* protocol/ciphersuite to use, or all      */
+-} opt;
+-
+-void my_debug( void *ctx, int level, const char *str )
+-{
+-    if( level < opt.debug_level )
+-    {
+-        fprintf( (FILE *) ctx, "%s", str );
+-        fflush(  (FILE *) ctx  );
+-    }
+-}
+-
+-#if !defined(POLARSSL_BIGNUM_C) || !defined(POLARSSL_ENTROPY_C) ||  \
+-    !defined(POLARSSL_SSL_TLS_C) || !defined(POLARSSL_SSL_CLI_C) || \
+-    !defined(POLARSSL_NET_C) || !defined(POLARSSL_RSA_C) ||         \
+-    !defined(POLARSSL_CTR_DRBG_C)
+-int main( int argc, char *argv[] )
+-{
+-    ((void) argc);
+-    ((void) argv);
+-
+-    printf("POLARSSL_BIGNUM_C and/or POLARSSL_ENTROPY_C and/or "
+-           "POLARSSL_SSL_TLS_C and/or POLARSSL_SSL_CLI_C and/or "
+-           "POLARSSL_NET_C and/or POLARSSL_RSA_C and/or "
+-           "POLARSSL_CTR_DRBG_C not defined.\n");
+-    return( 0 );
+-}
+-#else
+-int do_handshake( ssl_context *ssl, struct options *opt )
+-{
+-    int ret;
+-    unsigned char buf[1024];
+-    memset(buf, 0, 1024);
+-
+-    /*
+-     * 4. Handshake
+-     */
+-    printf( "  . Performing the SSL/TLS handshake..." );
+-    fflush( stdout );
+-
+-    while( ( ret = ssl_handshake( ssl ) ) != 0 )
+-    {
+-        if( ret != POLARSSL_ERR_NET_WANT_READ && ret != POLARSSL_ERR_NET_WANT_WRITE )
+-        {
+-#if defined(POLARSSL_ERROR_C)
+-            error_strerror( ret, (char *) buf, 1024 );
+-#endif
+-            printf( " failed\n  ! ssl_handshake returned %d: %s\n\n", ret, buf );
+-            return( -1 );
+-        }
+-    }
+-
+-    printf( " ok\n    [ Ciphersuite is %s ]\n",
+-            ssl_get_ciphersuite( ssl ) );
+-
+-    /*
+-     * 5. Verify the server certificate
+-     */
+-    printf( "  . Verifying peer X.509 certificate..." );
+-
+-    if( ( ret = ssl_get_verify_result( ssl ) ) != 0 )
+-    {
+-        printf( " failed\n" );
+-
+-        if( ( ret & BADCERT_EXPIRED ) != 0 )
+-            printf( "  ! server certificate has expired\n" );
+-
+-        if( ( ret & BADCERT_REVOKED ) != 0 )
+-            printf( "  ! server certificate has been revoked\n" );
+-
+-        if( ( ret & BADCERT_CN_MISMATCH ) != 0 )
+-            printf( "  ! CN mismatch (expected CN=%s)\n", opt->server_name );
+-
+-        if( ( ret & BADCERT_NOT_TRUSTED ) != 0 )
+-            printf( "  ! self-signed or not signed by a trusted CA\n" );
+-
+-        printf( "\n" );
+-    }
+-    else
+-        printf( " ok\n" );
+-
+-    printf( "  . Peer certificate information    ...\n" );
+-    x509parse_cert_info( (char *) buf, sizeof( buf ) - 1, "      ",
+-                         ssl_get_peer_cert( ssl ) );
+-    printf( "%s\n", buf );
+-
+-    return( 0 );
+-}
+-
+-int write_ssl_data( ssl_context *ssl, unsigned char *buf, size_t len )
+-{
+-    int ret;
+-
+-    printf("\n%s", buf);
+-    while( len && ( ret = ssl_write( ssl, buf, len ) ) <= 0 )
+-    {
+-        if( ret != POLARSSL_ERR_NET_WANT_READ && ret != POLARSSL_ERR_NET_WANT_WRITE )
+-        {
+-            printf( " failed\n  ! ssl_write returned %d\n\n", ret );
+-            return -1;
+-        }
+-    }
+-
+-    return( 0 );
+-}
+-
+-int write_ssl_and_get_response( ssl_context *ssl, unsigned char *buf, size_t len )
+-{
+-    int ret;
+-    unsigned char data[128];
+-    char code[4];
+-    size_t i, idx = 0;
+-
+-    printf("\n%s", buf);
+-    while( len && ( ret = ssl_write( ssl, buf, len ) ) <= 0 )
+-    {
+-        if( ret != POLARSSL_ERR_NET_WANT_READ && ret != POLARSSL_ERR_NET_WANT_WRITE )
+-        {
+-            printf( " failed\n  ! ssl_write returned %d\n\n", ret );
+-            return -1;
+-        }
+-    }
+-
+-    do
+-    {
+-        len = sizeof( data ) - 1;
+-        memset( data, 0, sizeof( data ) );
+-        ret = ssl_read( ssl, data, len );
+-
+-        if( ret == POLARSSL_ERR_NET_WANT_READ || ret == POLARSSL_ERR_NET_WANT_WRITE )
+-            continue;
+-
+-        if( ret == POLARSSL_ERR_SSL_PEER_CLOSE_NOTIFY )
+-            return -1;
+-
+-        if( ret <= 0 )
+-        {
+-            printf( "failed\n  ! ssl_read returned %d\n\n", ret );
+-            return -1;
+-        }
+-
+-        printf("\n%s", data);
+-        len = ret;
+-        for( i = 0; i < len; i++ )
+-        {
+-            if( data[i] != '\n' )
+-            {
+-                if( idx < 4 )
+-                    code[ idx++ ] = data[i];
+-                continue;
+-            }
+-
+-            if( idx == 4 && code[0] >= '0' && code[0] <= '9' && code[3] == ' ' )
+-            {
+-                code[3] = '\0';
+-                return atoi( code );
+-            }
+-            
+-            idx = 0;
+-        }
+-    }
+-    while( 1 );
+-}
+-
+-int write_and_get_response( int sock_fd, unsigned char *buf, size_t len )
+-{
+-    int ret;
+-    unsigned char data[128];
+-    char code[4];
+-    size_t i, idx = 0;
+-
+-    printf("\n%s", buf);
+-    if( len && ( ret = write( sock_fd, buf, len ) ) <= 0 )
+-    {
+-        printf( " failed\n  ! ssl_write returned %d\n\n", ret );
+-            return -1;
+-    }
+-
+-    do
+-    {
+-        len = sizeof( data ) - 1;
+-        memset( data, 0, sizeof( data ) );
+-        ret = read( sock_fd, data, len );
+-
+-        if( ret <= 0 )
+-        {
+-            printf( "failed\n  ! read returned %d\n\n", ret );
+-            return -1;
+-        }
+-
+-        printf("\n%s", data);
+-        len = ret;
+-        for( i = 0; i < len; i++ )
+-        {
+-            if( data[i] != '\n' )
+-            {
+-                if( idx < 4 )
+-                    code[ idx++ ] = data[i];
+-                continue;
+-            }
+-
+-            if( idx == 4 && code[0] >= '0' && code[0] <= '9' && code[3] == ' ' )
+-            {
+-                code[3] = '\0';
+-                return atoi( code );
+-            }
+-            
+-            idx = 0;
+-        }
+-    }
+-    while( 1 );
+-}
+-
+-#if defined(POLARSSL_BASE64_C)
+-#define USAGE_AUTH \
+-    "    authentication=%%d   default: 0 (disabled)\n"      \
+-    "    user_name=%%s        default: \"user\"\n"          \
+-    "    user_pwd=%%s         default: \"password\"\n"      
+-#else
+-#define USAGE_AUTH \
+-    "    authentication options disabled. (Require POLARSSL_BASE64_C)\n"
+-#endif /* POLARSSL_BASE64_C */
+-
+-#if defined(POLARSSL_FS_IO)
+-#define USAGE_IO \
+-    "    ca_file=%%s          default: \"\" (pre-loaded)\n" \
+-    "    crt_file=%%s         default: \"\" (pre-loaded)\n" \
+-    "    key_file=%%s         default: \"\" (pre-loaded)\n"
+-#else
+-#define USAGE_IO \
+-    "    No file operations available (POLARSSL_FS_IO not defined)\n"
+-#endif /* POLARSSL_FS_IO */
+-
+-#define USAGE \
+-    "\n usage: ssl_mail_client param=<>...\n"               \
+-    "\n acceptable parameters:\n"                           \
+-    "    server_name=%%s      default: localhost\n"         \
+-    "    server_port=%%d      default: 4433\n"              \
+-    "    debug_level=%%d      default: 0 (disabled)\n"      \
+-    "    mode=%%d             default: 0 (SSL/TLS) (1 for STARTTLS)\n"  \
+-    USAGE_AUTH                                              \
+-    "    mail_from=%%s        default: \"\"\n"              \
+-    "    mail_to=%%s          default: \"\"\n"              \
+-    USAGE_IO                                                \
+-    "    force_ciphersuite=<name>    default: all enabled\n"\
+-    " acceptable ciphersuite names:\n"
+-
+-int main( int argc, char *argv[] )
+-{
+-    int ret = 0, len, server_fd;
+-    unsigned char buf[1024];
+-#if defined(POLARSSL_BASE64_C)
+-    unsigned char base[1024];
+-#endif
+-    char hostname[32];
+-    const char *pers = "ssl_mail_client";
+-
+-    entropy_context entropy;
+-    ctr_drbg_context ctr_drbg;
+-    ssl_context ssl;
+-    x509_cert cacert;
+-    x509_cert clicert;
+-    rsa_context rsa;
+-    int i;
+-    size_t n;
+-    char *p, *q;
+-    const int *list;
+-
+-    /*
+-     * Make sure memory references are valid.
+-     */
+-    server_fd = 0;
+-    memset( &cacert, 0, sizeof( x509_cert ) );
+-    memset( &clicert, 0, sizeof( x509_cert ) );
+-    memset( &rsa, 0, sizeof( rsa_context ) );
+-
+-    if( argc == 0 )
+-    {
+-    usage:
+-        printf( USAGE );
+-
+-        list = ssl_list_ciphersuites();
+-        while( *list )
+-        {
+-            printf("    %s\n", ssl_get_ciphersuite_name( *list ) );
+-            list++;
+-        }
+-        printf("\n");
+-        goto exit;
+-    }
+-
+-    opt.server_name         = DFL_SERVER_NAME;
+-    opt.server_port         = DFL_SERVER_PORT;
+-    opt.debug_level         = DFL_DEBUG_LEVEL;
+-    opt.authentication      = DFL_AUTHENTICATION;
+-    opt.mode                = DFL_MODE;
+-    opt.user_name           = DFL_USER_NAME;
+-    opt.user_pwd            = DFL_USER_PWD;
+-    opt.mail_from           = DFL_MAIL_FROM;
+-    opt.mail_to             = DFL_MAIL_TO;
+-    opt.ca_file             = DFL_CA_FILE;
+-    opt.crt_file            = DFL_CRT_FILE;
+-    opt.key_file            = DFL_KEY_FILE;
+-    opt.force_ciphersuite[0]= DFL_FORCE_CIPHER;
+-
+-    for( i = 1; i < argc; i++ )
+-    {
+-        p = argv[i];
+-        if( ( q = strchr( p, '=' ) ) == NULL )
+-            goto usage;
+-        *q++ = '\0';
+-
+-        if( strcmp( p, "server_name" ) == 0 )
+-            opt.server_name = q;
+-        else if( strcmp( p, "server_port" ) == 0 )
+-        {
+-            opt.server_port = atoi( q );
+-            if( opt.server_port < 1 || opt.server_port > 65535 )
+-                goto usage;
+-        }
+-        else if( strcmp( p, "debug_level" ) == 0 )
+-        {
+-            opt.debug_level = atoi( q );
+-            if( opt.debug_level < 0 || opt.debug_level > 65535 )
+-                goto usage;
+-        }
+-        else if( strcmp( p, "authentication" ) == 0 )
+-        {
+-            opt.authentication = atoi( q );
+-            if( opt.authentication < 0 || opt.authentication > 1 )
+-                goto usage;
+-        }
+-        else if( strcmp( p, "mode" ) == 0 )
+-        {
+-            opt.mode = atoi( q );
+-            if( opt.mode < 0 || opt.mode > 1 )
+-                goto usage;
+-        }
+-        else if( strcmp( p, "user_name" ) == 0 )
+-            opt.user_name = q;
+-        else if( strcmp( p, "user_pwd" ) == 0 )
+-            opt.user_pwd = q;
+-        else if( strcmp( p, "mail_from" ) == 0 )
+-            opt.mail_from = q;
+-        else if( strcmp( p, "mail_to" ) == 0 )
+-            opt.mail_to = q;
+-        else if( strcmp( p, "ca_file" ) == 0 )
+-            opt.ca_file = q;
+-        else if( strcmp( p, "crt_file" ) == 0 )
+-            opt.crt_file = q;
+-        else if( strcmp( p, "key_file" ) == 0 )
+-            opt.key_file = q;
+-        else if( strcmp( p, "force_ciphersuite" ) == 0 )
+-        {
+-            opt.force_ciphersuite[0] = -1;
+-
+-            opt.force_ciphersuite[0] = ssl_get_ciphersuite_id( q );
+-
+-            if( opt.force_ciphersuite[0] <= 0 )
+-                goto usage;
+-
+-            opt.force_ciphersuite[1] = 0;
+-        }
+-        else
+-            goto usage;
+-    }
+-
+-    /*
+-     * 0. Initialize the RNG and the session data
+-     */
+-    printf( "\n  . Seeding the random number generator..." );
+-    fflush( stdout );
+-
+-    entropy_init( &entropy );
+-    if( ( ret = ctr_drbg_init( &ctr_drbg, entropy_func, &entropy,
+-                               (const unsigned char *) pers,
+-                               strlen( pers ) ) ) != 0 )
+-    {
+-        printf( " failed\n  ! ctr_drbg_init returned %d\n", ret );
+-        goto exit;
+-    }
+-
+-    printf( " ok\n" );
+-
+-    /*
+-     * 1.1. Load the trusted CA
+-     */
+-    printf( "  . Loading the CA root certificate ..." );
+-    fflush( stdout );
+-
+-#if defined(POLARSSL_FS_IO)
+-    if( strlen( opt.ca_file ) )
+-        ret = x509parse_crtfile( &cacert, opt.ca_file );
+-    else
+-#endif
+-#if defined(POLARSSL_CERTS_C)
+-        ret = x509parse_crt( &cacert, (const unsigned char *) test_ca_crt,
+-                strlen( test_ca_crt ) );
+-#else
+-    {
+-        ret = 1;
+-        printf("POLARSSL_CERTS_C not defined.");
+-    }
+-#endif
+-    if( ret < 0 )
+-    {
+-        printf( " failed\n  !  x509parse_crt returned %d\n\n", ret );
+-        goto exit;
+-    }
+-
+-    printf( " ok (%d skipped)\n", ret );
+-
+-    /*
+-     * 1.2. Load own certificate and private key
+-     *
+-     * (can be skipped if client authentication is not required)
+-     */
+-    printf( "  . Loading the client cert. and key..." );
+-    fflush( stdout );
+-
+-#if defined(POLARSSL_FS_IO)
+-    if( strlen( opt.crt_file ) )
+-        ret = x509parse_crtfile( &clicert, opt.crt_file );
+-    else 
+-#endif
+-#if defined(POLARSSL_CERTS_C)
+-        ret = x509parse_crt( &clicert, (const unsigned char *) test_cli_crt,
+-                strlen( test_cli_crt ) );
+-#else
+-    {
+-        ret = -1;
+-        printf("POLARSSL_CERTS_C not defined.");
+-    }
+-#endif
+-    if( ret != 0 )
+-    {
+-        printf( " failed\n  !  x509parse_crt returned %d\n\n", ret );
+-        goto exit;
+-    }
+-
+-#if defined(POLARSSL_FS_IO)
+-    if( strlen( opt.key_file ) )
+-        ret = x509parse_keyfile( &rsa, opt.key_file, "" );
+-    else
+-#endif
+-#if defined(POLARSSL_CERTS_C)
+-        ret = x509parse_key( &rsa, (const unsigned char *) test_cli_key,
+-                strlen( test_cli_key ), NULL, 0 );
+-#else
+-    {
+-        ret = -1;
+-        printf("POLARSSL_CERTS_C not defined.");
+-    }
+-#endif
+-    if( ret != 0 )
+-    {
+-        printf( " failed\n  !  x509parse_key returned %d\n\n", ret );
+-        goto exit;
+-    }
+-
+-    printf( " ok\n" );
+-
+-    /*
+-     * 2. Start the connection
+-     */
+-    printf( "  . Connecting to tcp/%s/%-4d...", opt.server_name,
+-                                                opt.server_port );
+-    fflush( stdout );
+-
+-    if( ( ret = net_connect( &server_fd, opt.server_name,
+-                                         opt.server_port ) ) != 0 )
+-    {
+-        printf( " failed\n  ! net_connect returned %d\n\n", ret );
+-        goto exit;
+-    }
+-
+-    printf( " ok\n" );
+-
+-    /*
+-     * 3. Setup stuff
+-     */
+-    printf( "  . Setting up the SSL/TLS structure..." );
+-    fflush( stdout );
+-
+-    if( ( ret = ssl_init( &ssl ) ) != 0 )
+-    {
+-        printf( " failed\n  ! ssl_init returned %d\n\n", ret );
+-        goto exit;
+-    }
+-
+-    printf( " ok\n" );
+-
+-    ssl_set_endpoint( &ssl, SSL_IS_CLIENT );
+-    ssl_set_authmode( &ssl, SSL_VERIFY_OPTIONAL );
+-
+-    ssl_set_rng( &ssl, ctr_drbg_random, &ctr_drbg );
+-    ssl_set_dbg( &ssl, my_debug, stdout );
+-    ssl_set_bio( &ssl, net_recv, &server_fd,
+-            net_send, &server_fd );
+-
+-    if( opt.force_ciphersuite[0] != DFL_FORCE_CIPHER )
+-        ssl_set_ciphersuites( &ssl, opt.force_ciphersuite );
+-
+-    ssl_set_ca_chain( &ssl, &cacert, NULL, opt.server_name );
+-    ssl_set_own_cert( &ssl, &clicert, &rsa );
+-
+-    ssl_set_hostname( &ssl, opt.server_name );
+-
+-    if( opt.mode == MODE_SSL_TLS )
+-    {
+-        if( do_handshake( &ssl, &opt ) != 0 )
+-            goto exit;
+-
+-        printf( "  > Get header from server:" );
+-        fflush( stdout );
+-
+-        ret = write_ssl_and_get_response( &ssl, buf, 0 );
+-        if( ret < 200 || ret > 299 )
+-        {
+-            printf( " failed\n  ! server responded with %d\n\n", ret );
+-            goto exit;
+-        }
+-
+-        printf(" ok\n" );
+-
+-        printf( "  > Write EHLO to server:" );
+-        fflush( stdout );
+-
+-        gethostname( hostname, 32 );
+-        len = sprintf( (char *) buf, "EHLO %s\n", hostname );
+-        ret = write_ssl_and_get_response( &ssl, buf, len );
+-        if( ret < 200 || ret > 299 )
+-        {
+-            printf( " failed\n  ! server responded with %d\n\n", ret );
+-            goto exit;
+-        }
+-    }
+-    else
+-    {
+-        printf( "  > Get header from server:" );
+-        fflush( stdout );
+-
+-        ret = write_and_get_response( server_fd, buf, 0 );
+-        if( ret < 200 || ret > 299 )
+-        {
+-            printf( " failed\n  ! server responded with %d\n\n", ret );
+-            goto exit;
+-        }
+-
+-        printf(" ok\n" );
+-
+-        printf( "  > Write EHLO to server:" );
+-        fflush( stdout );
+-
+-        gethostname( hostname, 32 );
+-        len = sprintf( (char *) buf, "EHLO %s\n", hostname );
+-        ret = write_and_get_response( server_fd, buf, len );
+-        if( ret < 200 || ret > 299 )
+-        {
+-            printf( " failed\n  ! server responded with %d\n\n", ret );
+-            goto exit;
+-        }
+-
+-        printf(" ok\n" );
+-
+-        printf( "  > Write STARTTLS to server:" );
+-        fflush( stdout );
+-
+-        gethostname( hostname, 32 );
+-        len = sprintf( (char *) buf, "STARTTLS\n" );
+-        ret = write_and_get_response( server_fd, buf, len );
+-        if( ret < 200 || ret > 299 )
+-        {
+-            printf( " failed\n  ! server responded with %d\n\n", ret );
+-            goto exit;
+-        }
+-
+-        printf(" ok\n" );
+-
+-        if( do_handshake( &ssl, &opt ) != 0 )
+-            goto exit;
+-    }
+-
+-#if defined(POLARSSL_BASE64_C)
+-    if( opt.authentication )
+-    {
+-        printf( "  > Write AUTH LOGIN to server:" );
+-        fflush( stdout );
+-
+-        len = sprintf( (char *) buf, "AUTH LOGIN\n" );
+-        ret = write_ssl_and_get_response( &ssl, buf, len );
+-        if( ret < 200 || ret > 399 )
+-        {
+-            printf( " failed\n  ! server responded with %d\n\n", ret );
+-            goto exit;
+-        }
+-
+-        printf(" ok\n" );
+-
+-        printf( "  > Write username to server: %s", opt.user_name );
+-        fflush( stdout );
+-
+-        n = sizeof( buf );
+-        len = base64_encode( base, &n, (const unsigned char *) opt.user_name,
+-                             strlen( opt.user_name ) );
+-        len = sprintf( (char *) buf, "%s\n", base );
+-        ret = write_ssl_and_get_response( &ssl, buf, len );
+-        if( ret < 300 || ret > 399 )
+-        {
+-            printf( " failed\n  ! server responded with %d\n\n", ret );
+-            goto exit;
+-        }
+-
+-        printf(" ok\n" );
+-
+-        printf( "  > Write password to server: %s", opt.user_pwd );
+-        fflush( stdout );
+-
+-        len = base64_encode( base, &n, (const unsigned char *) opt.user_pwd,
+-                             strlen( opt.user_pwd ) );
+-        len = sprintf( (char *) buf, "%s\n", base );
+-        ret = write_ssl_and_get_response( &ssl, buf, len );
+-        if( ret < 200 || ret > 399 )
+-        {
+-            printf( " failed\n  ! server responded with %d\n\n", ret );
+-            goto exit;
+-        }
+-
+-        printf(" ok\n" );
+-    }
+-#endif
+-
+-    printf( "  > Write MAIL FROM to server:" );
+-    fflush( stdout );
+-
+-    len = sprintf( (char *) buf, "MAIL FROM:<%s>\n", opt.mail_from );
+-    ret = write_ssl_and_get_response( &ssl, buf, len );
+-    if( ret < 200 || ret > 299 )
+-    {
+-        printf( " failed\n  ! server responded with %d\n\n", ret );
+-        goto exit;
+-    }
+-
+-    printf(" ok\n" );
+-
+-    printf( "  > Write RCPT TO to server:" );
+-    fflush( stdout );
+-
+-    len = sprintf( (char *) buf, "RCPT TO:<%s>\n", opt.mail_to );
+-    ret = write_ssl_and_get_response( &ssl, buf, len );
+-    if( ret < 200 || ret > 299 )
+-    {
+-        printf( " failed\n  ! server responded with %d\n\n", ret );
+-        goto exit;
+-    }
+-
+-    printf(" ok\n" );
+-
+-    printf( "  > Write DATA to server:" );
+-    fflush( stdout );
+-
+-    len = sprintf( (char *) buf, "DATA\n" );
+-    ret = write_ssl_and_get_response( &ssl, buf, len );
+-    if( ret < 300 || ret > 399 )
+-    {
+-        printf( " failed\n  ! server responded with %d\n\n", ret );
+-        goto exit;
+-    }
+-
+-    printf(" ok\n" );
+-
+-    printf( "  > Write content to server:" );
+-    fflush( stdout );
+-
+-    len = sprintf( (char *) buf, "From: %s\nSubject: PolarSSL Test mail\n\n"
+-            "This is a simple test mail from the "
+-            "PolarSSL mail client example.\n"
+-            "\n"
+-            "Enjoy!", opt.mail_from );
+-    ret = write_ssl_data( &ssl, buf, len );
+-
+-    len = sprintf( (char *) buf, "\r\n.\r\n");
+-    ret = write_ssl_and_get_response( &ssl, buf, len );
+-    if( ret < 200 || ret > 299 )
+-    {
+-        printf( " failed\n  ! server responded with %d\n\n", ret );
+-        goto exit;
+-    }
+-
+-    printf(" ok\n" );
+-
+-    ssl_close_notify( &ssl );
+-
+-exit:
+-
+-    if( server_fd )
+-        net_close( server_fd );
+-    x509_free( &clicert );
+-    x509_free( &cacert );
+-    rsa_free( &rsa );
+-    ssl_free( &ssl );
+-
+-#if defined(_WIN32)
+-    printf( "  + Press Enter to exit this program.\n" );
+-    fflush( stdout ); getchar();
+-#endif
+-
+-    return( ret );
+-}
+-#endif /* POLARSSL_BIGNUM_C && POLARSSL_ENTROPY_C && POLARSSL_SSL_TLS_C &&
+-          POLARSSL_SSL_CLI_C && POLARSSL_NET_C && POLARSSL_RSA_C **
+-          POLARSSL_CTR_DRBG_C */
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/programs/ssl/ssl_server2.c polarssl-1.2.8/programs/ssl/ssl_server2.c
 --- polarssl-1.2.8-downloaded/programs/ssl/ssl_server2.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/programs/ssl/ssl_server2.c	2014-05-21 08:16:40.102815513 +0300
++++ polarssl-1.2.8/programs/ssl/ssl_server2.c	2014-05-21 10:19:06.530701692 +0300
 @@ -99,87 +99,7 @@
   */
  int my_ciphersuites[] =
@@ -20498,7 +21514,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/programs/ssl/ssl_server.c polarssl-1.2.8/programs/ssl/ssl_server.c
 --- polarssl-1.2.8-downloaded/programs/ssl/ssl_server.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/programs/ssl/ssl_server.c	2014-05-21 08:16:40.102815513 +0300
++++ polarssl-1.2.8/programs/ssl/ssl_server.c	2014-05-21 10:19:06.530701692 +0300
 @@ -54,15 +54,14 @@
      "<h2>PolarSSL Test Server</h2>\r\n" \
      "<p>Successful connection using: %s</p>\r\n"
@@ -21095,7 +22111,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
            POLARSSL_SSL_TLS_C && POLARSSL_SSL_SRV_C && POLARSSL_NET_C &&
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/programs/test/benchmark.c polarssl-1.2.8/programs/test/benchmark.c
 --- polarssl-1.2.8-downloaded/programs/test/benchmark.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/programs/test/benchmark.c	2014-05-21 08:16:40.102815513 +0300
++++ polarssl-1.2.8/programs/test/benchmark.c	2014-05-21 10:19:06.530701692 +0300
 @@ -38,10 +38,8 @@
  #include "polarssl/sha1.h"
  #include "polarssl/sha2.h"
@@ -21109,7 +22125,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  #include "polarssl/rsa.h"
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/programs/test/selftest.c polarssl-1.2.8/programs/test/selftest.c
 --- polarssl-1.2.8-downloaded/programs/test/selftest.c	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/programs/test/selftest.c	2014-05-21 08:16:40.102815513 +0300
++++ polarssl-1.2.8/programs/test/selftest.c	2014-05-21 10:19:06.530701692 +0300
 @@ -40,7 +40,6 @@
  #include "polarssl/sha1.h"
  #include "polarssl/sha2.h"
@@ -21120,7 +22136,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
  #include "polarssl/camellia.h"
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/test/client_test/client.c polarssl-1.2.8/test/client_test/client.c
 --- polarssl-1.2.8-downloaded/test/client_test/client.c	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/test/client_test/client.c	2014-05-21 08:16:40.110815513 +0300
++++ polarssl-1.2.8/test/client_test/client.c	2014-05-21 10:19:06.530701692 +0300
 @@ -0,0 +1,204 @@
 +/*
 + * client.c
@@ -21328,7 +22344,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/test/client_test/Debug/makefile polarssl-1.2.8/test/client_test/Debug/makefile
 --- polarssl-1.2.8-downloaded/test/client_test/Debug/makefile	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/test/client_test/Debug/makefile	2014-05-21 08:52:51.522781871 +0300
++++ polarssl-1.2.8/test/client_test/Debug/makefile	2014-05-21 10:19:06.530701692 +0300
 @@ -0,0 +1,43 @@
 +################################################################################
 +# Automatically-generated file. Do not edit!
@@ -21375,7 +22391,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +-include ../makefile.targets
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/test/client_test/Debug/objects.mk polarssl-1.2.8/test/client_test/Debug/objects.mk
 --- polarssl-1.2.8-downloaded/test/client_test/Debug/objects.mk	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/test/client_test/Debug/objects.mk	2014-05-21 08:52:51.514781871 +0300
++++ polarssl-1.2.8/test/client_test/Debug/objects.mk	2014-05-21 10:19:06.530701692 +0300
 @@ -0,0 +1,8 @@
 +################################################################################
 +# Automatically-generated file. Do not edit!
@@ -21387,7 +22403,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/test/client_test/Debug/sources.mk polarssl-1.2.8/test/client_test/Debug/sources.mk
 --- polarssl-1.2.8-downloaded/test/client_test/Debug/sources.mk	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/test/client_test/Debug/sources.mk	2014-05-21 08:52:51.514781871 +0300
++++ polarssl-1.2.8/test/client_test/Debug/sources.mk	2014-05-21 10:19:06.530701692 +0300
 @@ -0,0 +1,17 @@
 +################################################################################
 +# Automatically-generated file. Do not edit!
@@ -21408,7 +22424,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/test/client_test/Debug/subdir.mk polarssl-1.2.8/test/client_test/Debug/subdir.mk
 --- polarssl-1.2.8-downloaded/test/client_test/Debug/subdir.mk	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/test/client_test/Debug/subdir.mk	2014-05-21 08:52:51.518781871 +0300
++++ polarssl-1.2.8/test/client_test/Debug/subdir.mk	2014-05-21 10:19:06.530701692 +0300
 @@ -0,0 +1,24 @@
 +################################################################################
 +# Automatically-generated file. Do not edit!
@@ -21436,7 +22452,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/test/server_test/Debug/makefile polarssl-1.2.8/test/server_test/Debug/makefile
 --- polarssl-1.2.8-downloaded/test/server_test/Debug/makefile	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/test/server_test/Debug/makefile	2014-05-21 08:16:40.110815513 +0300
++++ polarssl-1.2.8/test/server_test/Debug/makefile	2014-05-21 10:19:06.530701692 +0300
 @@ -0,0 +1,43 @@
 +################################################################################
 +# Automatically-generated file. Do not edit!
@@ -21483,7 +22499,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +-include ../makefile.targets
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/test/server_test/Debug/objects.mk polarssl-1.2.8/test/server_test/Debug/objects.mk
 --- polarssl-1.2.8-downloaded/test/server_test/Debug/objects.mk	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/test/server_test/Debug/objects.mk	2014-05-21 08:16:40.110815513 +0300
++++ polarssl-1.2.8/test/server_test/Debug/objects.mk	2014-05-21 10:19:06.530701692 +0300
 @@ -0,0 +1,8 @@
 +################################################################################
 +# Automatically-generated file. Do not edit!
@@ -21495,7 +22511,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/test/server_test/Debug/private.der polarssl-1.2.8/test/server_test/Debug/private.der
 --- polarssl-1.2.8-downloaded/test/server_test/Debug/private.der	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/test/server_test/Debug/private.der	2014-05-21 08:16:40.110815513 +0300
++++ polarssl-1.2.8/test/server_test/Debug/private.der	2014-05-21 10:19:06.530701692 +0300
 @@ -0,0 +1,12 @@
 +0Ç	' Ç ÔBÑ^é;∑˝;£ã»"[B≥ü‰Œ!_”§®&3â¬âπ”üI>ø∏m°FÔ˚Ï§Öv∑ÆˆÆt1Üû”çDãC˚p"˝¢aÍ:›ÉoÎ¡—ÿh∫öC¡\§††⁄Í*ñÙ¯Z	¡p‰¬®rùh«`]u≈ÎŒïyp{W«?ñ(hqÁÆMAî˜r(w‰J˛≠W¥.sø~’d⁄P€àuæœ'd3⁄sU¨›πj°i≤òÜ	ùS«˘Ï€ñçË-<;Ÿ"âzáä{”º¢¿ r]∞´¡ÃQ† Z˚8é~@dß∏sÃÛÿ¢º‰@Úc7ò›@ΩöÈ˛@ävåbÀìÍ@»ceÿ(ôWìú†‘cèV’ùÏ©ˆ~r$Aò'ªåõ˚RÌ¥GºYBÀp
 +ΩÊLº~⁄òkä)AzÚ:'∆!`Ó[m‘≈qú‡ûp{A–_‚åm‹]º˙:qkÂN]b/»±ˇ5Ç}~æhj≈kÁ
@@ -21512,7 +22528,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 \ No newline at end of file
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/test/server_test/Debug/private.pem polarssl-1.2.8/test/server_test/Debug/private.pem
 --- polarssl-1.2.8-downloaded/test/server_test/Debug/private.pem	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/test/server_test/Debug/private.pem	2014-05-21 08:16:40.110815513 +0300
++++ polarssl-1.2.8/test/server_test/Debug/private.pem	2014-05-21 10:19:06.530701692 +0300
 @@ -0,0 +1,54 @@
 +-----BEGIN RSA PRIVATE KEY-----
 +Proc-Type: 4,ENCRYPTED
@@ -21570,7 +22586,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +-----END RSA PRIVATE KEY-----
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/test/server_test/Debug/sources.mk polarssl-1.2.8/test/server_test/Debug/sources.mk
 --- polarssl-1.2.8-downloaded/test/server_test/Debug/sources.mk	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/test/server_test/Debug/sources.mk	2014-05-21 08:16:40.110815513 +0300
++++ polarssl-1.2.8/test/server_test/Debug/sources.mk	2014-05-21 10:19:06.530701692 +0300
 @@ -0,0 +1,17 @@
 +################################################################################
 +# Automatically-generated file. Do not edit!
@@ -21591,7 +22607,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/test/server_test/Debug/subdir.mk polarssl-1.2.8/test/server_test/Debug/subdir.mk
 --- polarssl-1.2.8-downloaded/test/server_test/Debug/subdir.mk	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/test/server_test/Debug/subdir.mk	2014-05-21 08:16:40.110815513 +0300
++++ polarssl-1.2.8/test/server_test/Debug/subdir.mk	2014-05-21 10:19:06.530701692 +0300
 @@ -0,0 +1,24 @@
 +################################################################################
 +# Automatically-generated file. Do not edit!
@@ -21619,7 +22635,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/test/server_test/server.c polarssl-1.2.8/test/server_test/server.c
 --- polarssl-1.2.8-downloaded/test/server_test/server.c	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/test/server_test/server.c	2014-05-21 08:16:40.110815513 +0300
++++ polarssl-1.2.8/test/server_test/server.c	2014-05-21 10:19:06.530701692 +0300
 @@ -0,0 +1,303 @@
 +/*
 + * server.c
