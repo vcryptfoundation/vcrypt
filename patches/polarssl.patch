@@ -1448,13 +1448,11 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
   *
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/include/polarssl/x509.h polarssl-1.2.8/include/polarssl/x509.h
 --- polarssl-1.2.8-downloaded/include/polarssl/x509.h	2013-06-21 16:11:10.000000000 +0300
-+++ polarssl-1.2.8/include/polarssl/x509.h	2014-05-21 10:19:06.522701692 +0300
-@@ -771,6 +771,18 @@
++++ polarssl-1.2.8/include/polarssl/x509.h	2014-05-21 10:48:27.554674408 +0300
+@@ -771,6 +771,16 @@
   */
  int x509_self_test( int verbose );
  
-+#include "ssl.h" // me, delete this
-+
 +int x509_encode_fake_cert(mpi *pub_key, mpi *pub_key_exp, unsigned char *buff,
 +		int buflen);
 +
@@ -22344,7 +22342,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/test/client_test/Debug/makefile polarssl-1.2.8/test/client_test/Debug/makefile
 --- polarssl-1.2.8-downloaded/test/client_test/Debug/makefile	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/test/client_test/Debug/makefile	2014-05-21 10:19:06.530701692 +0300
++++ polarssl-1.2.8/test/client_test/Debug/makefile	2014-05-21 10:52:04.742671043 +0300
 @@ -0,0 +1,43 @@
 +################################################################################
 +# Automatically-generated file. Do not edit!
@@ -22391,7 +22389,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +-include ../makefile.targets
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/test/client_test/Debug/objects.mk polarssl-1.2.8/test/client_test/Debug/objects.mk
 --- polarssl-1.2.8-downloaded/test/client_test/Debug/objects.mk	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/test/client_test/Debug/objects.mk	2014-05-21 10:19:06.530701692 +0300
++++ polarssl-1.2.8/test/client_test/Debug/objects.mk	2014-05-21 10:52:04.734671043 +0300
 @@ -0,0 +1,8 @@
 +################################################################################
 +# Automatically-generated file. Do not edit!
@@ -22403,7 +22401,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/test/client_test/Debug/sources.mk polarssl-1.2.8/test/client_test/Debug/sources.mk
 --- polarssl-1.2.8-downloaded/test/client_test/Debug/sources.mk	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/test/client_test/Debug/sources.mk	2014-05-21 10:19:06.530701692 +0300
++++ polarssl-1.2.8/test/client_test/Debug/sources.mk	2014-05-21 10:52:04.734671043 +0300
 @@ -0,0 +1,17 @@
 +################################################################################
 +# Automatically-generated file. Do not edit!
@@ -22424,7 +22422,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/test/client_test/Debug/subdir.mk polarssl-1.2.8/test/client_test/Debug/subdir.mk
 --- polarssl-1.2.8-downloaded/test/client_test/Debug/subdir.mk	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/test/client_test/Debug/subdir.mk	2014-05-21 10:19:06.530701692 +0300
++++ polarssl-1.2.8/test/client_test/Debug/subdir.mk	2014-05-21 10:52:04.738671043 +0300
 @@ -0,0 +1,24 @@
 +################################################################################
 +# Automatically-generated file. Do not edit!
@@ -22452,7 +22450,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/test/server_test/Debug/makefile polarssl-1.2.8/test/server_test/Debug/makefile
 --- polarssl-1.2.8-downloaded/test/server_test/Debug/makefile	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/test/server_test/Debug/makefile	2014-05-21 10:19:06.530701692 +0300
++++ polarssl-1.2.8/test/server_test/Debug/makefile	2014-05-21 10:52:04.754671043 +0300
 @@ -0,0 +1,43 @@
 +################################################################################
 +# Automatically-generated file. Do not edit!
@@ -22499,7 +22497,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +-include ../makefile.targets
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/test/server_test/Debug/objects.mk polarssl-1.2.8/test/server_test/Debug/objects.mk
 --- polarssl-1.2.8-downloaded/test/server_test/Debug/objects.mk	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/test/server_test/Debug/objects.mk	2014-05-21 10:19:06.530701692 +0300
++++ polarssl-1.2.8/test/server_test/Debug/objects.mk	2014-05-21 10:52:04.746671043 +0300
 @@ -0,0 +1,8 @@
 +################################################################################
 +# Automatically-generated file. Do not edit!
@@ -22586,7 +22584,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +-----END RSA PRIVATE KEY-----
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/test/server_test/Debug/sources.mk polarssl-1.2.8/test/server_test/Debug/sources.mk
 --- polarssl-1.2.8-downloaded/test/server_test/Debug/sources.mk	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/test/server_test/Debug/sources.mk	2014-05-21 10:19:06.530701692 +0300
++++ polarssl-1.2.8/test/server_test/Debug/sources.mk	2014-05-21 10:52:04.750671043 +0300
 @@ -0,0 +1,17 @@
 +################################################################################
 +# Automatically-generated file. Do not edit!
@@ -22607,7 +22605,7 @@ diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-
 +
 diff -auNr --exclude .cproject --exclude .project --exclude relativize polarssl-1.2.8-downloaded/test/server_test/Debug/subdir.mk polarssl-1.2.8/test/server_test/Debug/subdir.mk
 --- polarssl-1.2.8-downloaded/test/server_test/Debug/subdir.mk	1970-01-01 02:00:00.000000000 +0200
-+++ polarssl-1.2.8/test/server_test/Debug/subdir.mk	2014-05-21 10:19:06.530701692 +0300
++++ polarssl-1.2.8/test/server_test/Debug/subdir.mk	2014-05-21 10:52:04.750671043 +0300
 @@ -0,0 +1,24 @@
 +################################################################################
 +# Automatically-generated file. Do not edit!
