@@ -1,0 +1,5 @@
+#OTHERFLAGS := $(shell mysql_config --cflags)
+LINKFLAGS := $(shell mysql_config --libs_r) 
+
+#OTHERFLAGS += -fdata-sections -ffunction-sections
+#LINKFLAGS += -Wl,--gc-sections

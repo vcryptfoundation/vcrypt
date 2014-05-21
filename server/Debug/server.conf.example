@@ -1,0 +1,8 @@
+mysql_host = localhost
+mysql_user = vcrypt
+mysql_pass = vcrypt
+mysql_db = vcrypt
+
+private_key = /path/rsa_asn.der
+
+
