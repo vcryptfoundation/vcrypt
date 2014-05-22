@@ -14,7 +14,8 @@ wget http://downloads.xiph.org/releases/opus/opus-1.1.tar.gz -O- | tar xz
 4. Build the opus into the opus-1.1/installed (the vcrypt_libclient will look for it in that place)
 (cd opus-1.1 && ./configure --prefix=$PWD/installed --disable-shared && make && make install)
 
-5. Download polarssl version 1.2.8 from https://polarssl.org/download/start/polarssl-1.2.8-gpl.tgz (wget doesn't work) and untar it to current directory (please note, other versions will not work due to need to apply the patch)
+5. Download polarssl version 1.2.8 from https://polarssl.org/download/start/polarssl-1.2.8-gpl.tgz (wget doesn't work) 
+and untar it to current directory (please note, other versions will not work due to need to apply the patch)
 tar xvzf <path>/polarssl-1.2.8-gpl.tgz
 
 6. Apply the patch to polarssl library
